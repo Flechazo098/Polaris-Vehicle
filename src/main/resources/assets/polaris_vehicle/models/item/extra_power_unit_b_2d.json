@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "polaris_vehicle:item/extra_power_unit_b"
+  }
+}

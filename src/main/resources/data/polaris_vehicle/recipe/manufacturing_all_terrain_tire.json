@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tire",
+  "materials": [
+    { "item": "minecraft:iron_ingot", "count": 6 },
+    { "item": "polaris_vehicle:slime_rubber", "count": 6 }
+  ],
+  "result": { "id": "polaris_vehicle:all_terrain_tire", "count": 1 }
+}

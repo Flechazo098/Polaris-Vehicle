@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "part",
+  "materials": [
+    { "item": "polaris_vehicle:compressed_alloy_plate", "count": 2 },
+    { "item": "minecraft:redstone", "count": 32 }
+  ],
+  "result": { "id": "polaris_vehicle:extra_power_unit_a", "count": 1 }
+}

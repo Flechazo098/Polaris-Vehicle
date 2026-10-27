@@ -1,0 +1,22 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "vehicle",
+  "materials": [
+    {
+      "item": "polaris_vehicle:compressed_alloy_plate",
+      "count": 18
+    },
+    {
+      "item": "minecraft:lapis_lazuli",
+      "count": 18
+    },
+    {
+      "item": "minecraft:emerald",
+      "count": 32
+    }
+  ],
+  "result": {
+    "id": "polaris_vehicle:rally_car_vehicle",
+    "count": 1
+  }
+}

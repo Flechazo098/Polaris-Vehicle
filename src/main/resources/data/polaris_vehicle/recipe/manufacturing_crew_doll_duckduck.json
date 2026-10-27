@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "other",
+  "materials": [
+    { "item": "minecraft:diamond", "count": 1 },
+    { "tag": "minecraft:wool", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:crew_doll_duckduck", "count": 1 }
+}

@@ -1,0 +1,30 @@
+{
+  "physics": {
+    "mass_kilograms": 1400,
+    "center_of_mass_height_ratio": 0.14,
+    "suspension_rest_length": 0.34,
+    "suspension_max_droop": 0.24,
+    "suspension_natural_frequency_hertz": 3,
+    "compression_damping_ratio": 1.1,
+    "rebound_damping_ratio": 1.2,
+    "lateral_grip_response": 7,
+    "tire_grip_multiplier": 0.92,
+    "maximum_steering_angle_degrees": 46.0,
+    "maximum_step_height": 1,
+    "rolling_resistance_coefficient": 0.012,
+    "aerodynamic_drag_coefficient": 0.65,
+    "steering_limit_start_ratio": 0.55,
+    "minimum_steering_scale": 0.18
+  },
+  "powertrain": {
+    "body_weight_penalty": 21,
+    "engine_horsepower_multiplier": 1,
+    "engine_acceleration_multiplier": 1,
+    "base_max_speed_modifier": 0,
+    "base_acceleration_modifier": 0,
+    "reverse_speed_ratio": 0.3,
+    "minimum_reverse_speed": 2,
+    "maximum_reverse_speed": 5,
+    "braking_meters_per_second_squared": 12
+  }
+}

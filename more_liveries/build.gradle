@@ -1,0 +1,34 @@
+plugins {
+    id 'net.neoforged.moddev'
+}
+
+ext.mod_id = 'polaris_vehicle_more_liveries'
+ext.mod_name = 'Polaris Vehicle More Liveries'
+ext.mod_archive_name = mod_name
+ext.mod_description = 'Additional vehicle liveries for Polaris Vehicle.'
+apply plugin: 'polaris.mod-conventions'
+apply plugin: 'polaris.client-runtime'
+
+dependencies {
+    implementation project(':')
+    compileOnly "com.flechazo:optics-java:${optics_version}"
+    compileOnly "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+}
+
+neoForge {
+    mods {
+        polaris_vehicle_more_liveries { sourceSet(sourceSets.main) }
+        polaris_vehicle { sourceSet(rootProject.sourceSets.main) }
+    }
+    runs {
+        client {
+            client()
+            // Reuse the existing development saves, options and mods folder.
+            gameDirectory = rootProject.file('run')
+        }
+        server {
+            server()
+            gameDirectory = rootProject.file('run-server')
+        }
+    }
+}

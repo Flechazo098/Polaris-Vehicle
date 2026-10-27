@@ -1,0 +1,6 @@
+{
+  "polaris_vehicle:formula_car": "body",
+  "polaris_vehicle:convertible": "body",
+  "polaris_vehicle:rally_car": "body",
+  "polaris_vehicle:small_bus": "body"
+}

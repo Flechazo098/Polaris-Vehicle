@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "polaris_vehicle_more_liveries:item/blue_skin_vehicle_paint"
+  }
+}

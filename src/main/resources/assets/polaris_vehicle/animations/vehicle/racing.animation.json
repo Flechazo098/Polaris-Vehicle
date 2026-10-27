@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.racing.turn_right": {
+			"loop": true,
+			"bones": {
+				"wheelMain": {
+					"rotation": [0, 0, -25]
+				},
+				"tire1": {
+					"rotation": [0, 15, 0]
+				},
+				"tire2": {
+					"rotation": [0, 15, 0]
+				}
+			}
+		},
+		"animation.racing.turn_left": {
+			"loop": true,
+			"bones": {
+				"wheelMain": {
+					"rotation": [0, 0, 25]
+				},
+				"tire1": {
+					"rotation": [0, -15, 0]
+				},
+				"tire2": {
+					"rotation": [0, -15, 0]
+				}
+			}
+		}
+	}
+}

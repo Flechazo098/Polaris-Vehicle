@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "block",
+  "materials": [
+    { "item": "minecraft:yellow_concrete", "count": 11 },
+    { "item": "minecraft:white_concrete", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:roadblock", "count": 1 }
+}

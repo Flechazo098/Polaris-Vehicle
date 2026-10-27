@@ -1,0 +1,263 @@
+{
+  "vehicle.engine.atv": {
+    "sounds": [
+      "polaris_vehicle:vehicle/engine/atv"
+    ]
+  },
+  "vehicle.engine.dirt_bike": {
+    "sounds": [
+      "polaris_vehicle:vehicle/engine/dirt_bike"
+    ]
+  },
+  "vehicle.engine.electric": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/electric",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.go_kart": {
+    "sounds": [
+      "polaris_vehicle:vehicle/engine/go_kart"
+    ]
+  },
+  "vehicle.engine.mini_bus": {
+    "sounds": [
+      "polaris_vehicle:vehicle/engine/mini_bus"
+    ]
+  },
+  "vehicle.engine.moped": {
+    "sounds": [
+      "polaris_vehicle:vehicle/engine/moped"
+    ]
+  },
+  "vehicle.engine.small_car": {
+    "sounds": [
+      "polaris_vehicle:vehicle/engine/small_car"
+    ]
+  },
+  "tool.wrench.manual": {
+    "sounds": [
+      "polaris_vehicle:tool/wrench_manual"
+    ]
+  },
+  "tool.wrench.pneumatic": {
+    "sounds": [
+      "polaris_vehicle:tool/wrench_pneumatic"
+    ]
+  },
+  "tool.jack": {
+    "sounds": [
+      "polaris_vehicle:tool/jack"
+    ]
+  },
+  "vehicle.engine.bus.low": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/bus_low",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.bus.mid": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/bus_mid",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.bus.high": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/bus_high",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.formula_car.low": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/formula_car_low",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.formula_car.mid": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/formula_car_mid",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.formula_car.high": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/formula_car_high",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.kart.low": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/kart_low",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.kart.mid": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/kart_mid",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.kart.high": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/kart_high",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.rally_car.low": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/rally_car_low",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.rally_car.mid": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/rally_car_mid",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.rally_car.high": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/rally_car_high",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.suv.low": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/suv_low",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.suv.mid": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/suv_mid",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.suv.high": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/suv_high",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.formula_car.mixed": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/formula_car_low",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.kart.mixed": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/kart_low",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.suv.mixed": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/suv_low",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.bus.mixed": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/bus_low",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.engine.rally_car.mixed": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/engine/rally_car_low",
+        "stream": true,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "vehicle.horn.high": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/horn/high_loop",
+        "stream": true,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "vehicle.horn.electric": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/horn/electric_loop",
+        "stream": true,
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "vehicle.horn.bus": {
+    "sounds": [
+      {
+        "name": "polaris_vehicle:vehicle/horn/bus_loop",
+        "stream": true,
+        "attenuation_distance": 64
+      }
+    ]
+  }
+}

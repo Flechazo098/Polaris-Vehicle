@@ -1,0 +1,2084 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.humanoid.suv": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            10,
+            2,
+            -4
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            10,
+            2,
+            -3
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            10,
+            2,
+            -5
+          ],
+          "rotation": [
+            -69.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            10,
+            2,
+            -5
+          ],
+          "rotation": [
+            -69.76837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            10,
+            3,
+            -6
+          ],
+          "rotation": [
+            -62.5,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            10,
+            3,
+            -6
+          ],
+          "rotation": [
+            -60,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.humanoid.suv_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            10,
+            2,
+            -4
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            10,
+            2,
+            -3
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            10,
+            2,
+            -5
+          ],
+          "rotation": [
+            -81.2759,
+            -7.66251,
+            0.67956
+          ]
+        },
+        "leftArm": {
+          "position": [
+            10,
+            2,
+            -5
+          ],
+          "rotation": [
+            -62.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            10,
+            3,
+            -6
+          ],
+          "rotation": [
+            -62.5,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            10,
+            3,
+            -6
+          ],
+          "rotation": [
+            -60,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.humanoid.suv_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            10,
+            2,
+            -4
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            10,
+            2,
+            -3
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            10,
+            2,
+            -5
+          ],
+          "rotation": [
+            -62.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            10,
+            2,
+            -5
+          ],
+          "rotation": [
+            -78.67819,
+            13.63647,
+            -7.02277
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            10,
+            3,
+            -6
+          ],
+          "rotation": [
+            -62.5,
+            0,
+            0
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            10,
+            3,
+            -6
+          ],
+          "rotation": [
+            -60,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.humanoid.bus": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -3,
+            -2
+          ],
+          "rotation": [
+            -77.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -3,
+            -2
+          ],
+          "rotation": [
+            -77.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.bus_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -3,
+            -2
+          ],
+          "rotation": [
+            -80.65521,
+            -14.9937,
+            1.44617
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -3,
+            -2
+          ],
+          "rotation": [
+            -69.76837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.bus_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -3,
+            -2
+          ],
+          "rotation": [
+            -69.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -3,
+            -2
+          ],
+          "rotation": [
+            -79.55078,
+            13.65135,
+            -7.17602
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.ltl_car": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -69.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -69.76837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            3
+          ],
+          "rotation": [
+            -67.4227,
+            4.6185,
+            1.9175
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            3
+          ],
+          "rotation": [
+            -67.4227,
+            -4.6185,
+            -1.9175
+          ]
+        }
+      }
+    },
+    "animation.humanoid.ltl_car_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -64.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -78.7857,
+            11.18464,
+            -7.52292
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            3
+          ],
+          "rotation": [
+            -67.4227,
+            4.6185,
+            1.9175
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            3
+          ],
+          "rotation": [
+            -67.4227,
+            -4.6185,
+            -1.9175
+          ]
+        }
+      }
+    },
+    "animation.humanoid.ltl_car_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -78.7857,
+            -11.18464,
+            7.52292
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            2,
+            4
+          ],
+          "rotation": [
+            -64.76837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            3
+          ],
+          "rotation": [
+            -67.4227,
+            4.6185,
+            1.9175
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            3
+          ],
+          "rotation": [
+            -67.4227,
+            -4.6185,
+            -1.9175
+          ]
+        }
+      }
+    },
+    "animation.humanoid.kdc2": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            -6,
+            8
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -6,
+            8
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -6,
+            6
+          ],
+          "rotation": [
+            -62.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -6,
+            6
+          ],
+          "rotation": [
+            -62.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            -3.5,
+            5
+          ],
+          "rotation": [
+            -69.5542,
+            11.7351,
+            -4.336
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            -3.5,
+            5
+          ],
+          "rotation": [
+            -69.5542,
+            -11.7351,
+            -4.336
+          ]
+        }
+      }
+    },
+    "animation.humanoid.kdc2_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            -6,
+            8
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -6,
+            8
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -6,
+            6
+          ],
+          "rotation": [
+            -57.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -6,
+            6
+          ],
+          "rotation": [
+            -65.34088,
+            8.24774,
+            -0.2509
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            -3.5,
+            5
+          ],
+          "rotation": [
+            -69.5542,
+            11.7351,
+            -4.336
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            -3.5,
+            5
+          ],
+          "rotation": [
+            -69.5542,
+            -11.7351,
+            -4.336
+          ]
+        }
+      }
+    },
+    "animation.humanoid.kdc2_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            -6,
+            8
+          ],
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -6,
+            8
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -6,
+            6
+          ],
+          "rotation": [
+            -65.34088,
+            -8.24774,
+            0.2509
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -6,
+            6
+          ],
+          "rotation": [
+            -57.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            -3.5,
+            5
+          ],
+          "rotation": [
+            -69.5542,
+            11.7351,
+            -4.336
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            -3.5,
+            5
+          ],
+          "rotation": [
+            -69.5542,
+            -11.7351,
+            -4.336
+          ]
+        }
+      }
+    },
+    "animation.humanoid.slc_ltl": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0,
+            7
+          ],
+          "rotation": [
+            -17.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            0,
+            7
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            0,
+            6
+          ],
+          "rotation": [
+            -99.71418,
+            1.25433,
+            -5.58764
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            0,
+            6
+          ],
+          "rotation": [
+            -99.71418,
+            -1.25433,
+            5.58764
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            5
+          ],
+          "rotation": [
+            -53.5145,
+            17.6606,
+            9.54
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            5
+          ],
+          "rotation": [
+            -53.5145,
+            -17.6606,
+            -9.54
+          ]
+        }
+      }
+    },
+    "animation.humanoid.slc_ltl_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0,
+            7
+          ],
+          "rotation": [
+            -17.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            0,
+            7
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            0,
+            4
+          ],
+          "rotation": [
+            -105.36429,
+            11.14946,
+            -0.77875
+          ]
+        },
+        "leftArm": {
+          "position": [
+            -2.15,
+            0,
+            7.25
+          ],
+          "rotation": [
+            -101.22221,
+            -3.35704,
+            10.47705
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            5
+          ],
+          "rotation": [
+            -53.5145,
+            17.6606,
+            9.54
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            5
+          ],
+          "rotation": [
+            -53.5145,
+            -17.6606,
+            -9.54
+          ]
+        }
+      }
+    },
+    "animation.humanoid.slc_ltl_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0,
+            7
+          ],
+          "rotation": [
+            -17.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            0,
+            7
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            0,
+            6.9
+          ],
+          "rotation": [
+            -101.76971,
+            -4.10596,
+            -9.76955
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            0,
+            4.3
+          ],
+          "rotation": [
+            -100.32079,
+            -11.20766,
+            0.51865
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            5
+          ],
+          "rotation": [
+            -53.5145,
+            17.6606,
+            9.54
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            5
+          ],
+          "rotation": [
+            -53.5145,
+            -17.6606,
+            -9.54
+          ]
+        }
+      }
+    },
+    "animation.humanoid.ltl_car2": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            1,
+            1
+          ],
+          "rotation": [
+            -20,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "rotation": [
+            -74.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "rotation": [
+            -74.76837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            -1
+          ],
+          "rotation": [
+            -59.9054,
+            4.3288,
+            2.5048
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            -1
+          ],
+          "rotation": [
+            -59.9054,
+            -4.3288,
+            -2.5048
+          ]
+        }
+      }
+    },
+    "animation.humanoid.ltl_car2_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            1,
+            1
+          ],
+          "rotation": [
+            -20,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "rotation": [
+            -67.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "rotation": [
+            -83.34766,
+            12.35119,
+            -5.09017
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            -1
+          ],
+          "rotation": [
+            -59.9054,
+            4.3288,
+            2.5048
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            -1
+          ],
+          "rotation": [
+            -59.9054,
+            -4.3288,
+            -2.5048
+          ]
+        }
+      }
+    },
+    "animation.humanoid.ltl_car2_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            1,
+            1
+          ],
+          "rotation": [
+            -20,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "rotation": [
+            -83.34766,
+            -12.35119,
+            5.09017
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "rotation": [
+            -67.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0,
+            3,
+            -1
+          ],
+          "rotation": [
+            -59.9054,
+            4.3288,
+            2.5048
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0,
+            3,
+            -1
+          ],
+          "rotation": [
+            -59.9054,
+            -4.3288,
+            -2.5048
+          ]
+        }
+      }
+    },
+    "animation.humanoid.racing": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1,
+            -2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -82.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -82.29617,
+            -3.77203,
+            2.97683
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.racing_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1,
+            -2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -69.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -89.95861,
+            1.24399,
+            -4.50713
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.racing_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1,
+            -2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -91.2818,
+            -8.54605,
+            5.78478
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -69.79617,
+            -3.77203,
+            2.97683
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.f1": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -35,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -1.5,
+            -1.75
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -2.0,
+            -2.75
+          ],
+          "rotation": [
+            -77.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -2.0,
+            -2.75
+          ],
+          "rotation": [
+            -77.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0.0,
+            3.0,
+            -4.25
+          ],
+          "rotation": [
+            -72.48635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            3.0,
+            -4.25
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.f1_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -35,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -1.5,
+            -1.75
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -2.0,
+            -2.75
+          ],
+          "rotation": [
+            -72.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -2.0,
+            -2.75
+          ],
+          "rotation": [
+            -88.54885,
+            9.08383,
+            -5.32409
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0.0,
+            3.0,
+            -4.25
+          ],
+          "rotation": [
+            -72.48635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            3.0,
+            -4.25
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.f1_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -35,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0,
+            -1.5,
+            -1.75
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0,
+            -2.0,
+            -2.75
+          ],
+          "rotation": [
+            -90.32646,
+            -11.77335,
+            15.11878
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0,
+            -2.0,
+            -2.75
+          ],
+          "rotation": [
+            -72.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            0.0,
+            3.0,
+            -4.25
+          ],
+          "rotation": [
+            -72.48635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            3.0,
+            -4.25
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.mini_car": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1,
+            -2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -82.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -82.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.mini_car_turn_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1,
+            -2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -77.26837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -91.37071,
+            5.98787,
+            -10.76574
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    },
+    "animation.humanoid.mini_car_turn_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            0,
+            0
+          ],
+          "rotation": [
+            -12.5,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1,
+            -2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "rightArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -91.37071,
+            -5.98787,
+            10.76574
+          ]
+        },
+        "leftArm": {
+          "position": [
+            0.0,
+            -2,
+            -3
+          ],
+          "rotation": [
+            -77.26837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "rightLeg": {
+          "position": [
+            -0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -74.98635,
+            2.41476,
+            0.64743
+          ]
+        },
+        "leftLeg": {
+          "position": [
+            0.0,
+            1,
+            -2
+          ],
+          "rotation": [
+            -72.48435,
+            -2.38422,
+            -0.7522
+          ]
+        }
+      }
+    }
+  }
+}

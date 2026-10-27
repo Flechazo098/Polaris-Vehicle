@@ -1,0 +1,15 @@
+{
+  "id": "polaris_vehicle:development_iron",
+  "material_tag": "c:ingots/iron",
+  "material_count": 1,
+  "repair_amount": 1000,
+  "processing_ticks": 100,
+  "categories": [
+    "wheel",
+    "small_engine",
+    "medium_engine",
+    "large_engine",
+    "racing_engine",
+    "super_racing_engine"
+  ]
+}

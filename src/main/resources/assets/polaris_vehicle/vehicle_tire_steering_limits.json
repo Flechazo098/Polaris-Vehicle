@@ -1,0 +1,11 @@
+{
+  "polaris_vehicle:kart": 65.0,
+  "polaris_vehicle:elderly_car": 65.0,
+  "polaris_vehicle:small_bus": 21.5,
+  "polaris_vehicle:small_car": 65.0,
+  "polaris_vehicle:two_seat_car": 23.0,
+  "polaris_vehicle:suv": 15.0,
+  "polaris_vehicle:convertible": 22.5,
+  "polaris_vehicle:formula_car": 65.0,
+  "polaris_vehicle:rally_car": 20.5
+}

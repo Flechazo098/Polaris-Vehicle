@@ -1,0 +1,32 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.flechazo.polaris_vehicle.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EntityMixin",
+    "PlayerMixin",
+    "RampShapeOperationsMixin",
+    "sparkcore.LevelMixin",
+    "sparkcore.ServerLevelMixin"
+  ],
+  "client": [
+    "client.ElectricSoundChannelMixin",
+    "client.EnginePcmChannelMixin",
+    "client.EnginePcmSoundEngineMixin",
+    "client.HumanoidModelMixin",
+    "client.PlayerModelMixin",
+    "client.PlayerRendererMixin",
+    "client.CameraMixin",
+    "client.ModelBlockRendererMixin",
+    "client.QuadLighterMixin",
+    "client.SoundEngineAccessor",
+    "client.SoundManagerAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

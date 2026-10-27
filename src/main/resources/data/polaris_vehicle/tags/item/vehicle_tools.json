@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "polaris_vehicle:wrench",
+    "polaris_vehicle:electric_wrench",
+    "polaris_vehicle:hammer"
+  ]
+}

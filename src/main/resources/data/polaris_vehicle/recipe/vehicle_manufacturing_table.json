@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASA",
+    "ADA",
+    "AAA"
+  ],
+  "key": {
+    "A": { "item": "minecraft:quartz" },
+    "D": { "item": "minecraft:anvil" },
+    "S": { "item": "minecraft:crafting_table" }
+  },
+  "result": {
+    "id": "polaris_vehicle:vehicle_manufacturing_table",
+    "count": 1
+  }
+}

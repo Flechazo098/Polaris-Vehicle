@@ -1,0 +1,3 @@
+# Fixed authored asphalt material for both world and item rendering.
+newmtl ramp
+map_Kd polaris_vehicle:block/upper_asphalt_line_ramp

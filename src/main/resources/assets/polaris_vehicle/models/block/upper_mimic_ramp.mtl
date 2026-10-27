@@ -1,0 +1,3 @@
+# Inventory/particle fallback. World rendering resolves the supporting block sprite.
+newmtl ramp
+map_Kd polaris_vehicle:block/upper_mimic_ramp

@@ -1,0 +1,58 @@
+import com.flechazo.polaris.gradle.ExtractJarInJarCompileClasspath
+
+// Expand nested compile APIs and merge Sodium only for development clients.
+def jarInJarCompileOnly = {
+    String name,
+    Object dependencyNotation,
+    String runtimePrimaryId,
+    Collection<String> identifiers = [] ->
+    String taskSuffix = name.substring(0, 1).toUpperCase(Locale.ROOT) + name.substring(1)
+    def containerConfiguration = configurations.create("${name}JarInJarContainer") {
+        canBeConsumed = false
+        canBeResolved = true
+        transitive = false
+        description = "Outer Jar-in-Jar container used to build ${name}'s compile-only classpath"
+    }
+    dependencies.add(containerConfiguration.name, dependencyNotation)
+
+    def compileOutput = layout.buildDirectory.dir("generated/jarInJarCompileOnly/${name}/compile")
+    def runtimeOutput = layout.buildDirectory.dir("generated/jarInJarCompileOnly/${name}/runtime")
+    def extractTask = tasks.register(
+            "extract${taskSuffix}JarInJarCompileClasspath",
+            ExtractJarInJarCompileClasspath
+    ) {
+        container.from(containerConfiguration)
+        includedIdentifiers.set(identifiers as Set<String>)
+        runtimePrimaryIdentifier.set(runtimePrimaryId)
+        compileDirectory.set(compileOutput)
+        runtimeDirectory.set(runtimeOutput)
+    }
+    def compileJars = files({
+        fileTree(compileOutput.get().asFile) { include '*.jar' }
+    }).builtBy(extractTask)
+    def runtimeJars = files({
+        fileTree(runtimeOutput.get().asFile) { include '*.jar' }
+    }).builtBy(extractTask)
+    dependencies.add('compileOnly', compileJars)
+    // The classpath writer must see generated files even on a clean checkout.
+    tasks.matching { it.name == 'writeClientLegacyClasspath' }.configureEach {
+        dependsOn(extractTask)
+    }
+    return [compileJars: compileJars, runtimeJars: runtimeJars]
+}
+
+def sodiumDevelopment = jarInJarCompileOnly(
+        'sodium',
+        "curse.maven:sodium-394468:${sodium_file}",
+        'net.caffeinemc:neoforge'
+)
+def clientModRuntime = configurations.create('clientModRuntime') {
+    canBeConsumed = false
+    canBeResolved = true
+    transitive = false
+}
+dependencies {
+    add(clientModRuntime.name, sodiumDevelopment.runtimeJars)
+    add(clientModRuntime.name, "curse.maven:irisshaders-455508:${iris_file}")
+    add(clientModRuntime.name, "curse.maven:sodium-extra-447673:${sodium_extra_file}")
+}

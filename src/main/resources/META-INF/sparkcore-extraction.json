@@ -1,0 +1,1091 @@
+{
+  "upstream_version": "1.0.1031",
+  "license": "MIT",
+  "sources": [
+    {
+      "source": "cn/solarmoon/spark_core/LevelPatch.java",
+      "sha256": "49cdf19531bb5036a7e2b89d55b543e32061baf7ccb0eaa76ba80b305db422e5",
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/LevelPatch.java"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/api/SparkLevel.java",
+      "sha256": "c1932bfa8fb9da48af5d184cd6baf9fa1b7e9aec14ce18dd9087826282d950e5",
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/api/SparkLevel.java"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/api/SparkLevelKt.kt",
+      "sha256": "a5bc7bbc28180b5e3395c155f955ea9373ff897810cd1277b7400d4ab2e55f37",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/api/SparkLevelKt.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/mixin_interface/ILevelMixin.java",
+      "sha256": "166ccac6cea10d116b604b949bf9a5f3a2fd1c1042ea28152dee8d85fbd85afa",
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/mixin_interface/ILevelMixin.java"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/mixin/extension/LevelMixin.java",
+      "sha256": "3c74c5338e45cb268d3b16e18c1b90f23e275071355a47458d138b11ac595845",
+      "output": "src/main/java/com/flechazo/polaris_vehicle/mixin/sparkcore/LevelMixin.java"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/mixin/terrain/ServerLevelMixin.java",
+      "sha256": "8cd9538606571011bcf039ba57d6b26cf3e6d23bcac17bbc3a8ae15d4e9bed94",
+      "output": "src/main/java/com/flechazo/polaris_vehicle/mixin/sparkcore/ServerLevelMixin.java"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/PhysicsHost.kt",
+      "sha256": "fcecba293db34c3cf0d2b1ea4e6eb32389cf42317f4a5ba353332d52c05d9e07",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/PhysicsHost.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/PenetrationKey.kt",
+      "sha256": "5aba7cb2c47ce9ab1f74b15acaac06cb5ea2b04ed955057ab8d9966c30fffad0",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/PenetrationKey.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/PhysicsHelper.kt",
+      "sha256": "1fded5012cc88fb0282172173584eeec524562b0534a029102403a2570ae14f8",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/PhysicsHelper.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/body/CollisionGroups.kt",
+      "sha256": "de4d36bfcf4b5de7a824fec1b916311146b794d0a9bcba55ef95f5a8be3c42f6",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/CollisionGroups.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/body/ManifoldPoint.kt",
+      "sha256": "9b3911ab21237fe08859247885fe956b93f459199ac35a9f287b4352e86bc99c",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/ManifoldPoint.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/body/PhysicsBodyEvent.kt",
+      "sha256": "fcdbb5d26990e2679b63a5d5b6aa40ccae70e2d4fee8b3ea2dd07f167d926285",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyEvent.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/body/PhysicsBodyExtension.kt",
+      "sha256": "3042eaa638cc13f819bbcd2eae188f28176e0d1ad1ae77dba16c75deda2455bc",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyExtension.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/body/PhysicsBodyState.kt",
+      "sha256": "61803248899309f6c64515ecf7e2b55b21208f0a3993087800382c89967685f3",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyState.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/level/PhysicsLevel.kt",
+      "sha256": "23c6492ccb6ec5032e4352ed69bb1cdc235fd6458f47a04af0c900a9658a0ec6",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevel.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/level/PhysicsLevelApplier.kt",
+      "sha256": "38e70cf9e14e7ab793d288f1b82d59d4d68e5990b6770cc5e6b0d1497e021339",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevelApplier.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/level/PhysicsLevelState.kt",
+      "sha256": "e0f0c2c80f47d10c69220f75e0b5d039bd2a8ee89195bce1e823bad532a593ee",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevelState.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/level/PhysicsWorld.kt",
+      "sha256": "40a98b2dbecda3c7649218c37f75f53e82a0843466b81b35501ad1ae92896979",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsWorld.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/level/ServerPhysicsLevel.kt",
+      "sha256": "dc2fc730d141ac92b5c7249fe2ea5377e115d31b01b17fefe5e4a2f04afeef21",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/ServerPhysicsLevel.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/BlockMerger.kt",
+      "sha256": "ee35ca2fe78edacd00d657d1e12dc1ab3a78168653f20bf5cadbec5908955710",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockMerger.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/BlockPhysicsData.kt",
+      "sha256": "c2487a5a17073e70073cf0a2b673d8d848ffc0a22e5912696235dad09f9f1379",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockPhysicsData.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/BlockPhysicsDataMaps.kt",
+      "sha256": "928433fda83661d110c0a4518716aed5b0633f85f8a4ec612e9056250357b852",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockPhysicsDataMaps.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/BlockShapeManager.kt",
+      "sha256": "17650258ce9980f747437dc4c728e5da12d5394b9bb49f0c485674928fa5bf6e",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockShapeManager.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/ChunkHeightIndex.kt",
+      "sha256": "12351aeafc688cf98473ec566a2d40081ee797dfea10a2374a663c95c6d46c56",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/ChunkHeightIndex.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/PhysicsChunk.kt",
+      "sha256": "265e67bb4e5e060955b37ebb14592675273a50a1e0b6fe3a9a0e1f42a8384164",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunk.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/PhysicsChunkManager.kt",
+      "sha256": "70d3ee1f2160fc2996aac25ef190897fad041d2e9f6fcef0fae87999acd25523",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunkManager.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/PhysicsChunkSection.kt",
+      "sha256": "4438b2adac8922f8ba83ee8f48c2e6d410120c80485b8474dd84f870b6ee46b1",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunkSection.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/physics/terrain/SectionSnapshot.kt",
+      "sha256": "8dbf8c805b3babed9cb112af9e7ddfe9a6fe0abb91e8fdd8c727e18ca96cac7d",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/SectionSnapshot.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/util/PPhase.kt",
+      "sha256": "a400b10f35ba09e5e3d0859469460abe4753c9cc7a4b64e11849957470366b7c",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/PPhase.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/util/TaskSubmitOffice.kt",
+      "sha256": "e0109bd464aa7a9f098c4821e0758cfcab146d0e219664541ce82f77ee3a1860",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/TaskSubmitOffice.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/util/DelayedTask.kt",
+      "sha256": "2b2e32686f40e38d22035bae88f53ca3261ea68f0ec565b2145dc256676a1dfb",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/DelayedTask.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/util/InlineEventHandler.kt",
+      "sha256": "d0d4f7fb76f9767f7c7297428810f42ef2aeeababbd0b319923df4088119442d",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/InlineEventHandler.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/util/SparkMath.kt",
+      "sha256": "5df3e7543386059f3a52b1d888969bff4e4810dbb2c2b57e30cc5a52d0b3e3b9",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/SparkMath.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/util/BlockCollisionUtil.java",
+      "sha256": "62b1cba296c4e16b08a028bb50d72b4dc4b42cfacf6ef967bc0e161dbb2426f7",
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/util/BlockCollisionUtil.java"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/pack/NativeLoader.kt",
+      "sha256": "194c5fcfd567f952a4c10d015e536cfdf5d2cb5479b51d756afe43b26829855b",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/pack/NativeLoader.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/event/PhysicsLevelTickEvent.kt",
+      "sha256": "8e11476a09db8cab34d587f57a6a1e4cb57ace0d8d2c2ce263dc3432159230cf",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsLevelTickEvent.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/event/PhysicsLevelInitEvent.kt",
+      "sha256": "efb437f44ee04dc34dcc5a44d25ef64304a31295fb587e4cb2ca8c32a2319ae8",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsLevelInitEvent.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/event/PhysicsEntityTickEvent.kt",
+      "sha256": "9d73fe6bd10c27c92193167177290c38d50338fc796344b81e295db1e34a7615",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsEntityTickEvent.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/event/PhysicsContactEvent.kt",
+      "sha256": "c7c5d2f6b168718d507027424de8cd42414d137e0f6a37d2c88b23ca544715c9",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsContactEvent.kt"
+    },
+    {
+      "source": "cn/solarmoon/spark_core/event/NeedsCollisionEvent.kt",
+      "sha256": "bae84323d3992c69f20604a4681e8e7a540d6ceb1bb2f9ebad7e458761d5a3da",
+      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/NeedsCollisionEvent.kt"
+    },
+    {
+      "source": "com/jme3/bounding/BoundingBox.java",
+      "sha256": "ca1cf08635371d51a5e3449a6b8acaf56dd234cce93e99999bb0698a589fad0f",
+      "output": "src/main/java/com/jme3/bounding/BoundingBox.java"
+    },
+    {
+      "source": "com/jme3/bounding/package-info.java",
+      "sha256": "5b68be483c141aa60bb06fc4de262057c820554a257edcef6d286b6957772ec6",
+      "output": "src/main/java/com/jme3/bounding/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/Activation.java",
+      "sha256": "039d21217e1a4660db6cf9dfbcad4a8d2be3660b99e6b61a0cc7e05d8bc24e26",
+      "output": "src/main/java/com/jme3/bullet/collision/Activation.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/AfMode.java",
+      "sha256": "3304c01cefd573a16bd066fe4ce35f488b4fac5ba2aff3c93624ddc0f5342324",
+      "output": "src/main/java/com/jme3/bullet/collision/AfMode.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/CollisionFlag.java",
+      "sha256": "56a366592e677edc170246cee1efc0f274638f41e8cc11413de9f4199ff53ca2",
+      "output": "src/main/java/com/jme3/bullet/collision/CollisionFlag.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/ContactListener.java",
+      "sha256": "2e5cdcb83cf9978a90715b0f92e9842556b715f44d81f3a3f6c08e54d75ca595",
+      "output": "src/main/java/com/jme3/bullet/collision/ContactListener.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/ContactPointFlag.java",
+      "sha256": "24dbbec9675921c29a55d7e93f96ae71ac35d82b919c7867309f0bccb66188c9",
+      "output": "src/main/java/com/jme3/bullet/collision/ContactPointFlag.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/ManifoldPoints.java",
+      "sha256": "f7ec127229ff7507798fa33557153ec746a93d3e55d645ace452ea01cbe49c54",
+      "output": "src/main/java/com/jme3/bullet/collision/ManifoldPoints.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/package-info.java",
+      "sha256": "801438a03b0e0b5ebc740cb7a3d3c339fc2f3c9665e92407dc7ddc89fd48ae2e",
+      "output": "src/main/java/com/jme3/bullet/collision/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PcoType.java",
+      "sha256": "bb39fe8af84795341b2fca399fc8778d5789d34263d809d10f7d70e9d63632f5",
+      "output": "src/main/java/com/jme3/bullet/collision/PcoType.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PersistentManifolds.java",
+      "sha256": "3158cafda10cc1df6f946c55173b0c3d4001ac3842ffab0ef01112e95014bd98",
+      "output": "src/main/java/com/jme3/bullet/collision/PersistentManifolds.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PhysicsCollisionEvent.java",
+      "sha256": "7e9908ec400c86f84ff0a21f74154db92c1d8245498ee553ac328ea4a10ac3a5",
+      "output": "src/main/java/com/jme3/bullet/collision/PhysicsCollisionEvent.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PhysicsCollisionListener.java",
+      "sha256": "9be9a80fac4e1a56a16beec519d14c57058fcdade77a8bb46fd949672bc508e3",
+      "output": "src/main/java/com/jme3/bullet/collision/PhysicsCollisionListener.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PhysicsRayTestResult.java",
+      "sha256": "1cf4ae91fe40847167937723cffa2e453176daa92d70703c0b2fa02ccf71c797",
+      "output": "src/main/java/com/jme3/bullet/collision/PhysicsRayTestResult.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PhysicsSweepTestResult.java",
+      "sha256": "e86ea21288f53f467e3ccd52e441cbb6b76568696fc51df5ce69aef17b00a7fe",
+      "output": "src/main/java/com/jme3/bullet/collision/PhysicsSweepTestResult.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/Box2dShape.java",
+      "sha256": "a1099ec7296d9ecfc3739cf0b939615ccd584540fbdd47299bd1496524862466",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/Box2dShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/BoxCollisionShape.java",
+      "sha256": "b7cce48d73d7029bf1b6467330959825964b07824804bdc8efe4b8747c942eef",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/BoxCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/CapsuleCollisionShape.java",
+      "sha256": "7912dcc4ad06ad0074784b11af49b34ff6f067896a3efcc583ceb76be48d0d23",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/CapsuleCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/CollisionShape.java",
+      "sha256": "b6f0587a2f564cb81b367fb3edc4e0c16222c80c2f8b4d94bd188a8d6c56b26c",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/CollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/CompoundCollisionShape.java",
+      "sha256": "fa3bcfa55d2f7fe7e38a5f2457dfcd9fc3b38fb367649ae2a1cc699d1b1cbc26",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/CompoundCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/ConeCollisionShape.java",
+      "sha256": "30c4b5bb590f257921f2277f894fa94251b2b3a39753354843bbd5ad8a7d143f",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/ConeCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/ConicalFrustum.java",
+      "sha256": "423cf620a07903853fb502bbcba12051161b17d7480d066b44a08c3485c4a004",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/ConicalFrustum.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/Convex2dShape.java",
+      "sha256": "1a27dd9e680cb49fb7fb7ead33b406c3a383f57230f3a57f471db7486ba58e1c",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/Convex2dShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/ConvexShape.java",
+      "sha256": "ab6c61ebcc44001f23b366823b8212158290b6ed3efdc99a80c4dba0dd4e9cc5",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/ConvexShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/CustomConvexShape.java",
+      "sha256": "40d291f86f35df91bc8b266a5b4cc27f83fd5f37174a6bbb531665cc4fcfc069",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/CustomConvexShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/CylinderCollisionShape.java",
+      "sha256": "b811986217bbed904ca9ae3e46c8af26ecc602b8e0a136fb939b8111b072f3b3",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/CylinderCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/EmptyShape.java",
+      "sha256": "bd6861ecf05cbfbbad2d5d0d3e393bbcd8c6943d2af0548aeaf2e0711c86a16e",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/EmptyShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/GImpactCollisionShape.java",
+      "sha256": "15802800cdcec4cbd8c8f73adeaa2f7480f60b02ce240a6e8a3c1fbad05e6256",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/GImpactCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/HeightfieldCollisionShape.java",
+      "sha256": "0a26d18c6de28cb04a03cc997f15f624e0d7147c8c9a3f005680cae2dad1457e",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/HeightfieldCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/HullCollisionShape.java",
+      "sha256": "9839811ceb14dd6bc1400cb08e527c61937711ed5e858d18e18acb3dd31821c1",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/HullCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/infos/BoundingValueHierarchy.java",
+      "sha256": "271fbb80a476bc7725d1af5d37f0262a43d82fa72bf8a13a2d40ab8afe4174ac",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/infos/BoundingValueHierarchy.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/infos/ChildCollisionShape.java",
+      "sha256": "46fc75cca38484291b0db61ed6ae4c57c5131803e68063509c80d0be8d966742",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/infos/ChildCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/infos/CompoundMesh.java",
+      "sha256": "34a41b7edcd3d57b1de4669fb010c0acdf4ec7ae010cdbfcf1d4936fd2307018",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/infos/CompoundMesh.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/infos/IndexedMesh.java",
+      "sha256": "d12c9d9ec785ed5799fb6725b9ca96a06357728eaa4d29ea21a92e37070cbec1",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/infos/IndexedMesh.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/infos/package-info.java",
+      "sha256": "00f1ad0160e11a48c98da2cd757b66d062c7b1f0c18296eb10af1d62337dab01",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/infos/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/MeshCollisionShape.java",
+      "sha256": "21b0a34289a0215437659cfa42d129780b1d711ef77ec6cefa06b85136d35b47",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/MeshCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/MinkowskiSum.java",
+      "sha256": "814ade01b313d4d32e8be459f0aeb0e089f1a3561472333fb085244e04d41e4b",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/MinkowskiSum.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/MultiSphere.java",
+      "sha256": "da72e8419f8036c14dfabf53a5d7835e55f1484fb712617c99b535c22412735e",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/MultiSphere.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/package-info.java",
+      "sha256": "ea8049cb44be600c69cc744a3f363aa4c37713e3b4dc077327e992b34ed0c064",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/PlaneCollisionShape.java",
+      "sha256": "a08a6b6bb408c392a71b0a20391e0f1512d24143fa2eab1023f2c7db4e204f42",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/PlaneCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/SimplexCollisionShape.java",
+      "sha256": "cfc3db74cab906f1c95e46109d76fdf09a6e8537ccae4382b85eb3291ffe2d8e",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/SimplexCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/SphereCollisionShape.java",
+      "sha256": "52f2587115a62d7063d2c2a98bac5d3b276597f915e008c88c8df665a0b047fb",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/SphereCollisionShape.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/shapes/SphericalSegment.java",
+      "sha256": "f80d60684dae0722245ce96b6fdb0cbe3b4032b1e7880d87c0c6a9e40a74edc1",
+      "output": "src/main/java/com/jme3/bullet/collision/shapes/SphericalSegment.java"
+    },
+    {
+      "source": "com/jme3/bullet/CollisionConfiguration.java",
+      "sha256": "3234781393d15065683a892cd5be30131d24c8e90e3df94a7c33fcaf0e6d0791",
+      "output": "src/main/java/com/jme3/bullet/CollisionConfiguration.java"
+    },
+    {
+      "source": "com/jme3/bullet/CollisionSpace.java",
+      "sha256": "a75329b7182dcf67321ff4b24adeb0963730f06d2702169dd1a9fdcf1a50e888",
+      "output": "src/main/java/com/jme3/bullet/CollisionSpace.java"
+    },
+    {
+      "source": "com/jme3/bullet/DeformableSpace.java",
+      "sha256": "998f6cd32efc5a71f9acc033c0f27157e79c764a18de03f78fcb1cb103113acd",
+      "output": "src/main/java/com/jme3/bullet/DeformableSpace.java"
+    },
+    {
+      "source": "com/jme3/bullet/FillMode.java",
+      "sha256": "bfe72c1630d2e519d505c54c4981469e8186417ebf293ea9a255380eefc8947d",
+      "output": "src/main/java/com/jme3/bullet/FillMode.java"
+    },
+    {
+      "source": "com/jme3/bullet/FreeingMethods.java",
+      "sha256": "73dfbe2adbf6871d7b79fda4e159a78d578e9221882cbb16965ac1cb4a0a8ad8",
+      "output": "src/main/java/com/jme3/bullet/FreeingMethods.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/Anchor.java",
+      "sha256": "b30e7c4964a340f07ab1152df30450d0b519f711217b7d61d37bdfd073fcfec1",
+      "output": "src/main/java/com/jme3/bullet/joints/Anchor.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/ConeJoint.java",
+      "sha256": "8cdf5b49a5677ee766bcb9409d7eaf72c19591f5d4dd6072a5a33d1d307b1f5e",
+      "output": "src/main/java/com/jme3/bullet/joints/ConeJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/Constraint.java",
+      "sha256": "1d1e61c176d9c819bb8117b864fbb2b7cbf3b678481adeee7e1b726b8a554f89",
+      "output": "src/main/java/com/jme3/bullet/joints/Constraint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/GearJoint.java",
+      "sha256": "08929db4718af9e65cd5eaac18265434a8ff7975d77d08d7e60a84206dcbcf69",
+      "output": "src/main/java/com/jme3/bullet/joints/GearJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/HingeJoint.java",
+      "sha256": "12200a4c52805210d6f7cef47248f944362404c113c66711ab7d7fbbac548d22",
+      "output": "src/main/java/com/jme3/bullet/joints/HingeJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/JointEnd.java",
+      "sha256": "30cd95f37ad9ae32485f6d3b2668f342b6ed1d8d5f72d531e98501d797031043",
+      "output": "src/main/java/com/jme3/bullet/joints/JointEnd.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/motors/MotorParam.java",
+      "sha256": "e94b6f3f211321b4e7b0485d9b09a09386ca991c35e46fcbcae3c31b80b244ca",
+      "output": "src/main/java/com/jme3/bullet/joints/motors/MotorParam.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/motors/package-info.java",
+      "sha256": "2fe86a15d95c912151435cd243693832c51704e18fcd36a7474761a84aa2522b",
+      "output": "src/main/java/com/jme3/bullet/joints/motors/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/motors/RotationalLimitMotor.java",
+      "sha256": "9e6d74b9b8a5bbfaf11efc9f93f1f563bbfaf04df58f16dfbde2b9641a3dbacf",
+      "output": "src/main/java/com/jme3/bullet/joints/motors/RotationalLimitMotor.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/motors/RotationMotor.java",
+      "sha256": "d35af4f0ade545704c2e8cff69b5efa96ccf5d5d9f0295f51f8e63eb0de88890",
+      "output": "src/main/java/com/jme3/bullet/joints/motors/RotationMotor.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/motors/TranslationalLimitMotor.java",
+      "sha256": "2f5e43622310c6e7cde4443acbe512aa69c7fc55e3f4fb638b0f6651e98a6697",
+      "output": "src/main/java/com/jme3/bullet/joints/motors/TranslationalLimitMotor.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/motors/TranslationMotor.java",
+      "sha256": "944a8861a3d2566a253874218b75afab14807ef0850afc29ce03dc7ad45b485c",
+      "output": "src/main/java/com/jme3/bullet/joints/motors/TranslationMotor.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/New6Dof.java",
+      "sha256": "6427c8dbf1a68d0b6a5f5e7f96b5b62a26786a4cb0fb5a3de0e0eef9bc4b26c8",
+      "output": "src/main/java/com/jme3/bullet/joints/New6Dof.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/NewHinge.java",
+      "sha256": "a564da97e44392d83775f13f4ef86a72714f9a2302a9cd63b0119967aa382410",
+      "output": "src/main/java/com/jme3/bullet/joints/NewHinge.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/package-info.java",
+      "sha256": "7f529951c6f6f71d538f978b3821acede9bf6d5a553895cd78b8c4815c503695",
+      "output": "src/main/java/com/jme3/bullet/joints/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/PhysicsJoint.java",
+      "sha256": "bb98768f999a0ae97f6570f18dc1f1e5f7a5453fcc79e7ff890d43ddfd8477aa",
+      "output": "src/main/java/com/jme3/bullet/joints/PhysicsJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/Point2PointJoint.java",
+      "sha256": "1fcdf70859a6c263883778eba19be6647076be5e6e4b279a2c30820ad9c4070a",
+      "output": "src/main/java/com/jme3/bullet/joints/Point2PointJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/SixDofJoint.java",
+      "sha256": "96aa2c73146977d295de4ce166479d25124e8d72cf11af8117b536a3fc1d90d1",
+      "output": "src/main/java/com/jme3/bullet/joints/SixDofJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/SixDofSpringJoint.java",
+      "sha256": "77939c29835a3b7ecf33998f09900b3b34c03ca600d1eb32ceb38de2b3343d29",
+      "output": "src/main/java/com/jme3/bullet/joints/SixDofSpringJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/SliderJoint.java",
+      "sha256": "23fbab1859b753ff014eb7dca61d7749447cf710b9d2ba0d12cedbf7acc0a112",
+      "output": "src/main/java/com/jme3/bullet/joints/SliderJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/SoftAngularJoint.java",
+      "sha256": "4496ba46df9dae53e15d8b72617a29fa599c2d8f46ea93eb950db6f241f978db",
+      "output": "src/main/java/com/jme3/bullet/joints/SoftAngularJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/SoftLinearJoint.java",
+      "sha256": "fc0e4ef2b306941ba58ed03541bf3d616cf9f9e3417087c43fab1950e41e2e9f",
+      "output": "src/main/java/com/jme3/bullet/joints/SoftLinearJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/joints/SoftPhysicsJoint.java",
+      "sha256": "7f57fa0356fc9f39b516538e789b4ed58f2a4179cae501de28e6437d41838c69",
+      "output": "src/main/java/com/jme3/bullet/joints/SoftPhysicsJoint.java"
+    },
+    {
+      "source": "com/jme3/bullet/MultiBody.java",
+      "sha256": "3bc895c7ed45d38e9d95c795370cb23a9f43ac4f1bd4059629132540f1561894",
+      "output": "src/main/java/com/jme3/bullet/MultiBody.java"
+    },
+    {
+      "source": "com/jme3/bullet/MultiBodyJointType.java",
+      "sha256": "68c4d4b0c3d75676ee4c94d5ef9c3746c39f5f5639785248a60bcf317766e814",
+      "output": "src/main/java/com/jme3/bullet/MultiBodyJointType.java"
+    },
+    {
+      "source": "com/jme3/bullet/MultiBodyLink.java",
+      "sha256": "1db8c20db610b446e2246777deb82c2e47ebb9f0bceba06fbce08bd0437b6744",
+      "output": "src/main/java/com/jme3/bullet/MultiBodyLink.java"
+    },
+    {
+      "source": "com/jme3/bullet/MultiBodySpace.java",
+      "sha256": "e64eb3a2e4a41a07e832209980d289c54e4d0f45583e0208b974b6b63a3afa33",
+      "output": "src/main/java/com/jme3/bullet/MultiBodySpace.java"
+    },
+    {
+      "source": "com/jme3/bullet/NativePhysicsObject.java",
+      "sha256": "4b05dff1991334f833146e2a299fc995e6da5f02ad6ecabbd48ea71e6995d136",
+      "output": "src/main/java/com/jme3/bullet/NativePhysicsObject.java"
+    },
+    {
+      "source": "com/jme3/bullet/NpoTracker.java",
+      "sha256": "fc2158c27b94f84259fcfcdbabc5ee81c98b08252de1642aaf45972b5f3cc346",
+      "output": "src/main/java/com/jme3/bullet/NpoTracker.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/Aero.java",
+      "sha256": "a812d5fef8f0d27c42dc3065cc1c4db2aaed4c775670e3899c24c1f641b7011e",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/Aero.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/CharacterController.java",
+      "sha256": "0dc61d7253feeaa7e6cd18aecc2170861be0ad0a9fa8792d868c6aa0e0bf3b7c",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/CharacterController.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/Cluster.java",
+      "sha256": "d9b3aa3eccf615fb4e8860b5ae07ad7bd76fb169e1d6df2536c312921cf16605",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/Cluster.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/ConfigFlag.java",
+      "sha256": "7ab1c4879f692484f733c5e8f3193082771a7d50549accfed5e41d70a530bdfd",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/ConfigFlag.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/package-info.java",
+      "sha256": "ca8dfcb5872e0ba6c2f63c2f3de216187fc9fb55d01e1a1881720fa519fff0ce",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/RigidBodyMotionState.java",
+      "sha256": "d1063db8345fd9dcb32bb0063d7a7b45471ac61a84227fca27d3e0906d19421c",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/RigidBodyMotionState.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/RigidBodySnapshot.java",
+      "sha256": "edc0bc9fbef8f2889a3f38f57d89779f987d192f71b6c8942cefd020bc18bccc",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/RigidBodySnapshot.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/Sbcp.java",
+      "sha256": "2629a4911a8bfe3606c2efcbd3922e07232640e31a53efad382cd702d1d9debf",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/Sbcp.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/SoftBodyConfig.java",
+      "sha256": "e05312123335acd9c728bdcf9cac071506f995d84d76183a9dc54ca04180d297",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/SoftBodyConfig.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/SoftBodyMaterial.java",
+      "sha256": "5fff1720b0c82b21c1bbc564eacde7edd52cf2d4691021cfb785b02705292af7",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/SoftBodyMaterial.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/VehicleController.java",
+      "sha256": "47439370cd890756b5529b2959abad9ce68c54ee309506250e439f20cfcff187",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/VehicleController.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/infos/VehicleTuning.java",
+      "sha256": "c0dd6304241f217fbdb36acb5ce4a03c375f9270f07b76e78fb416b626cfa325",
+      "output": "src/main/java/com/jme3/bullet/objects/infos/VehicleTuning.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/MultiBodyCollider.java",
+      "sha256": "880e16a7e657f11d129a2cd72ac78e8c3cb10c4f8a561afa1d18bc725873cfae",
+      "output": "src/main/java/com/jme3/bullet/objects/MultiBodyCollider.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/package-info.java",
+      "sha256": "0fb13cafb8ccfee43b814271e8e8c020b7483e8a3f3800fa9a26a8caff0a00ba",
+      "output": "src/main/java/com/jme3/bullet/objects/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/PhysicsBody.java",
+      "sha256": "ec3ad8c84340a16ecf29fc60ce56e811600aab1ff4ebba852d3d19f9d601f93d",
+      "output": "src/main/java/com/jme3/bullet/objects/PhysicsBody.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/PhysicsCharacter.java",
+      "sha256": "a3c269392fbeceaa6828954d08309815416fc6ce2bbae3327e875079a06d30ad",
+      "output": "src/main/java/com/jme3/bullet/objects/PhysicsCharacter.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/PhysicsGhostObject.java",
+      "sha256": "e3114f4dff347ee2fa6ca3c0469ac6e3557204b4634933111b52e8de7647496a",
+      "output": "src/main/java/com/jme3/bullet/objects/PhysicsGhostObject.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/PhysicsRigidBody.java",
+      "sha256": "ad6cc9c40256b349c7abd9a4c63b0ca418e99599ac4f9e7a6d02ae6d7532426a",
+      "output": "src/main/java/com/jme3/bullet/objects/PhysicsRigidBody.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/PhysicsSoftBody.java",
+      "sha256": "f252641c03ecf2561754dcc29bad542d8ab1501f0ef287b925476b0ffb15a659",
+      "output": "src/main/java/com/jme3/bullet/objects/PhysicsSoftBody.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/PhysicsVehicle.java",
+      "sha256": "bf2012ccc4f52bd5bbe1de7afb57b69fd89c1e8f1f73d39d3bc7eaa25d08afb1",
+      "output": "src/main/java/com/jme3/bullet/objects/PhysicsVehicle.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/ReducedDeformableBody.java",
+      "sha256": "1cbf67fe0c52de0925d1acdf200b69536370b4ef0cf745e6c0d6e574e5d1b1db",
+      "output": "src/main/java/com/jme3/bullet/objects/ReducedDeformableBody.java"
+    },
+    {
+      "source": "com/jme3/bullet/objects/VehicleWheel.java",
+      "sha256": "c936b8f88c1d799b313e20b2b8abad07267cfb1b269b8074d12aaf1e50eecf70",
+      "output": "src/main/java/com/jme3/bullet/objects/VehicleWheel.java"
+    },
+    {
+      "source": "com/jme3/bullet/package-info.java",
+      "sha256": "af5e86121e12489271eb79efb23da5e22b0b6bdbc2c02a9231423862c0ea6c34",
+      "output": "src/main/java/com/jme3/bullet/package-info.java"
+    },
+    {
+      "source": "com/jme3/bullet/PhysicsSoftSpace.java",
+      "sha256": "e353d4de5049b55ea32ae3c3263257042a2ff0596ea50f85de52c9e265985379",
+      "output": "src/main/java/com/jme3/bullet/PhysicsSoftSpace.java"
+    },
+    {
+      "source": "com/jme3/bullet/PhysicsSpace.java",
+      "sha256": "9f7d8c62a6c87e44399ba7cf5d175be49dfd3b761f1542540c3674230a4d3c48",
+      "output": "src/main/java/com/jme3/bullet/PhysicsSpace.java"
+    },
+    {
+      "source": "com/jme3/bullet/PhysicsTickListener.java",
+      "sha256": "64d75bee29249b7cd03d69f228c69d0079d9436e07e03aa17ef17d1c95e9762f",
+      "output": "src/main/java/com/jme3/bullet/PhysicsTickListener.java"
+    },
+    {
+      "source": "com/jme3/bullet/RayTestFlag.java",
+      "sha256": "caa2865c8332229777ae5a6a616def3f0af0bdffec1d719af5285257b3a92c3e",
+      "output": "src/main/java/com/jme3/bullet/RayTestFlag.java"
+    },
+    {
+      "source": "com/jme3/bullet/RotationOrder.java",
+      "sha256": "a6f7c4db6396817a5702a8bd697b0b827553322139085510b22fad8eaed20018",
+      "output": "src/main/java/com/jme3/bullet/RotationOrder.java"
+    },
+    {
+      "source": "com/jme3/bullet/SoftBodyWorldInfo.java",
+      "sha256": "6c39048858db785b53bb7c016739ad86a9c45fda19449253159678b0b5551a86",
+      "output": "src/main/java/com/jme3/bullet/SoftBodyWorldInfo.java"
+    },
+    {
+      "source": "com/jme3/bullet/SolverInfo.java",
+      "sha256": "8d875efa7b493e15ea60567fdba65b223f037af87af5cafb51293138d58c10eb",
+      "output": "src/main/java/com/jme3/bullet/SolverInfo.java"
+    },
+    {
+      "source": "com/jme3/bullet/SolverMode.java",
+      "sha256": "731df77b30bf6be7290991d787bae367ee467d3a428687e99836cec64f0a280d",
+      "output": "src/main/java/com/jme3/bullet/SolverMode.java"
+    },
+    {
+      "source": "com/jme3/bullet/SolverType.java",
+      "sha256": "15d71f39cc454943284bf421ca7666f1d04f5a85399d4141d0fd692e3e0811ec",
+      "output": "src/main/java/com/jme3/bullet/SolverType.java"
+    },
+    {
+      "source": "com/jme3/bullet/StepFlag.java",
+      "sha256": "a3b84fe4c629e1af9b6c5ddc578e075673b789a0b0a55a01016f951d73e58ca8",
+      "output": "src/main/java/com/jme3/bullet/StepFlag.java"
+    },
+    {
+      "source": "com/jme3/bullet/util/DebugShapeFactory.java",
+      "sha256": "1ff0809e94f39373f70eb6f2dfa34e9a41c595fc55711279a60de2f997d0fbbd",
+      "output": "src/main/java/com/jme3/bullet/util/DebugShapeFactory.java"
+    },
+    {
+      "source": "com/jme3/bullet/util/NativeLibrary.java",
+      "sha256": "a67790afe19f0de5840ccb69e1c201c169989660cdfeafc2bb7cd79d366e47bd",
+      "output": "src/main/java/com/jme3/bullet/util/NativeLibrary.java"
+    },
+    {
+      "source": "com/jme3/bullet/util/NativeSoftBodyUtil.java",
+      "sha256": "3691e928c197f3e2a9018017028514664190b3598aa39135df23aa05779c2180",
+      "output": "src/main/java/com/jme3/bullet/util/NativeSoftBodyUtil.java"
+    },
+    {
+      "source": "com/jme3/bullet/util/package-info.java",
+      "sha256": "dcdfbc5893352becde4a1211b14aec9318182f3cbdeaabf7ce0524461b89c147",
+      "output": "src/main/java/com/jme3/bullet/util/package-info.java"
+    },
+    {
+      "source": "com/jme3/math/FastMath.java",
+      "sha256": "ba3cba199ada38470a11d6597ed7db37593f659886f3d9501421b05a06e54b5c",
+      "output": "src/main/java/com/jme3/math/FastMath.java"
+    },
+    {
+      "source": "com/jme3/math/Matrix3f.java",
+      "sha256": "784261c3de4af46dfb5ef7c511e19b845ad2605b95332da00d90b3d4e75ea7d7",
+      "output": "src/main/java/com/jme3/math/Matrix3f.java"
+    },
+    {
+      "source": "com/jme3/math/Matrix4f.java",
+      "sha256": "08c8c7a5cf058ef7c5d6f1485a7e53ebb5e2d44454967de623aeec5f928fbe96",
+      "output": "src/main/java/com/jme3/math/Matrix4f.java"
+    },
+    {
+      "source": "com/jme3/math/package-info.java",
+      "sha256": "c867f2637a211b60799e2e491fe58480ff0df5121e155b144b187f812b4138e5",
+      "output": "src/main/java/com/jme3/math/package-info.java"
+    },
+    {
+      "source": "com/jme3/math/Plane.java",
+      "sha256": "20f6b81093256cbc897e3ff4ae2e9703086f0bb578e5a5af6d3c3156c697a083",
+      "output": "src/main/java/com/jme3/math/Plane.java"
+    },
+    {
+      "source": "com/jme3/math/Quaternion.java",
+      "sha256": "2205f30bfe88a620098e7eaf3bf7b9f0fc72f036157f0d96185bfcff9bc7d349",
+      "output": "src/main/java/com/jme3/math/Quaternion.java"
+    },
+    {
+      "source": "com/jme3/math/Transform.java",
+      "sha256": "180e62dff0b9d37f83cd17d89a88bfca7dd139259825ca45c3db90cfa750d5a3",
+      "output": "src/main/java/com/jme3/math/Transform.java"
+    },
+    {
+      "source": "com/jme3/math/TransformDp.java",
+      "sha256": "f0e7fd12b58bbe6c8c613c6cc4ae987df0cedb5c09d2ea965e6f9898641acb58",
+      "output": "src/main/java/com/jme3/math/TransformDp.java"
+    },
+    {
+      "source": "com/jme3/math/Triangle.java",
+      "sha256": "97e907204db75ef98e214b93fa5e42403c7daac589f51bde96b0a957ff55647c",
+      "output": "src/main/java/com/jme3/math/Triangle.java"
+    },
+    {
+      "source": "com/jme3/math/Vector3f.java",
+      "sha256": "52ea4ce6cca112e3d395cd1c0d92e6d5ff733a4fce478b14c3e9fead2e6bdd33",
+      "output": "src/main/java/com/jme3/math/Vector3f.java"
+    },
+    {
+      "source": "com/jme3/system/JmeSystem.java",
+      "sha256": "2291b7263c251c57e1b1e960562faf0afe3234851298d7ac74478a19111cd7e0",
+      "output": "src/main/java/com/jme3/system/JmeSystem.java"
+    },
+    {
+      "source": "com/jme3/system/NativeLibraryLoader.java",
+      "sha256": "0966e266fd8065741a8b5c56e4890976e9cead0fe0b301b76ba40185cefa9fe5",
+      "output": "src/main/java/com/jme3/system/NativeLibraryLoader.java"
+    },
+    {
+      "source": "com/jme3/system/package-info.java",
+      "sha256": "9f1755d99db5b617a65bd0be7c2c17d61116c9537a8ef3da4d7286ec8ad82107",
+      "output": "src/main/java/com/jme3/system/package-info.java"
+    },
+    {
+      "source": "com/jme3/system/Platform.java",
+      "sha256": "a6fb62f75d7b4639e1de216c97d2b0666753090acb0edba595b697e0a94a9507",
+      "output": "src/main/java/com/jme3/system/Platform.java"
+    },
+    {
+      "source": "com/jme3/util/BufferAllocator.java",
+      "sha256": "738e5bef37ff760577565504b61f54a04fc05fcc41a1cc6bdec47f0b7f358403",
+      "output": "src/main/java/com/jme3/util/BufferAllocator.java"
+    },
+    {
+      "source": "com/jme3/util/BufferUtils.java",
+      "sha256": "77ecc0dfe79eba5effd6155dd7c22316b9b7313d0440b9f1e8c7ac033d32d2ab",
+      "output": "src/main/java/com/jme3/util/BufferUtils.java"
+    },
+    {
+      "source": "com/jme3/util/package-info.java",
+      "sha256": "abb5b3888ce971c7c19291c8f8ef392881f8ad31466732137b00b1ff595054f1",
+      "output": "src/main/java/com/jme3/util/package-info.java"
+    },
+    {
+      "source": "com/jme3/util/PrimitiveAllocator.java",
+      "sha256": "f2559cbeb95381d2b94497900581a7b301d884b8851d075679921029e7fa84e9",
+      "output": "src/main/java/com/jme3/util/PrimitiveAllocator.java"
+    },
+    {
+      "source": "com/jme3/util/TempVars.java",
+      "sha256": "e38837fdbc999a439dab49c8611ebddaf5baf9acba95843583f8d4652fb8a591",
+      "output": "src/main/java/com/jme3/util/TempVars.java"
+    },
+    {
+      "source": "com/simsilica/mathd/Matrix3d.java",
+      "sha256": "39d235d5d4030cb0ab1f50a205d112ed25daa962150802576a8ce0af17a84db8",
+      "output": "src/main/java/com/simsilica/mathd/Matrix3d.java"
+    },
+    {
+      "source": "com/simsilica/mathd/package-info.java",
+      "sha256": "d110c27363bac795c6142a51e65a6cb0bbc6c7d7223f4d1f09947f24fee3a3b0",
+      "output": "src/main/java/com/simsilica/mathd/package-info.java"
+    },
+    {
+      "source": "com/simsilica/mathd/Quatd.java",
+      "sha256": "dd179201534ab727b5a88ea75e7c6ad3be6502299dc5238ab47b3954e63ec3de",
+      "output": "src/main/java/com/simsilica/mathd/Quatd.java"
+    },
+    {
+      "source": "com/simsilica/mathd/Vec3d.java",
+      "sha256": "eeb4f8988dae869971c806b05cdfa4f52157b954fd08423f8936c0a1f2940d83",
+      "output": "src/main/java/com/simsilica/mathd/Vec3d.java"
+    },
+    {
+      "source": "jme3utilities/debug/Describer.java",
+      "sha256": "f890a201641b15b98f498dea2bb4449f2cb4a769e537446bb4f41333853b3a1e",
+      "output": "src/main/java/jme3utilities/debug/Describer.java"
+    },
+    {
+      "source": "jme3utilities/debug/Dumper.java",
+      "sha256": "f60d5c82a08e340de6762268c56906d2809420f323266ec9a42a3942104d12f0",
+      "output": "src/main/java/jme3utilities/debug/Dumper.java"
+    },
+    {
+      "source": "jme3utilities/debug/package-info.java",
+      "sha256": "c50b46f3cd6d53483d5bb0801435b7f879db6598993e6c576dba0dbb9275ed98",
+      "output": "src/main/java/jme3utilities/debug/package-info.java"
+    },
+    {
+      "source": "jme3utilities/lbj/IndexBuffer.java",
+      "sha256": "e3d64d999187788d47231be3557c09ed15a12cc678158b50f434b460a1e6b07b",
+      "output": "src/main/java/jme3utilities/lbj/IndexBuffer.java"
+    },
+    {
+      "source": "jme3utilities/lbj/Mesh.java",
+      "sha256": "81e8c367cdf22f3a52de1510d9e03f446dfe4ff30f407b8305cd77cf363a9450",
+      "output": "src/main/java/jme3utilities/lbj/Mesh.java"
+    },
+    {
+      "source": "jme3utilities/lbj/package-info.java",
+      "sha256": "fdf57d4d916f80d3de1f9d9e9f5e4929b0de6d042df13e29b32971d831414e75",
+      "output": "src/main/java/jme3utilities/lbj/package-info.java"
+    },
+    {
+      "source": "jme3utilities/math/DistinctVectorValues.java",
+      "sha256": "fc08f7418b4b8d241bc61bab5b2a00e1c688a3ced8c7319bdf29750ec6cc8032",
+      "output": "src/main/java/jme3utilities/math/DistinctVectorValues.java"
+    },
+    {
+      "source": "jme3utilities/math/IntPair.java",
+      "sha256": "bc9d5434428084cef7942547fb5be0a327137856d464666d8e39f9844d299722",
+      "output": "src/main/java/jme3utilities/math/IntPair.java"
+    },
+    {
+      "source": "jme3utilities/math/MyBuffer.java",
+      "sha256": "728d5737cf24dfc8b9bc2a38ab7b1c0093af3142e6b7a130c1a1d1c6cb94e8cb",
+      "output": "src/main/java/jme3utilities/math/MyBuffer.java"
+    },
+    {
+      "source": "jme3utilities/math/MyMath.java",
+      "sha256": "58b7806d238e345acf3ddf6547326b8a499fef42473af88435b092aa169c86f3",
+      "output": "src/main/java/jme3utilities/math/MyMath.java"
+    },
+    {
+      "source": "jme3utilities/math/MyQuaternion.java",
+      "sha256": "34b0ab1eb8d6dec01f59c56000c67d5ff2f1f341eaffbfac3d6c95c18fc04bd2",
+      "output": "src/main/java/jme3utilities/math/MyQuaternion.java"
+    },
+    {
+      "source": "jme3utilities/math/MyVector3f.java",
+      "sha256": "964dfac482e8e27dbb241710819710949203b96b2a3cd04eef32bd2a7b1725ef",
+      "output": "src/main/java/jme3utilities/math/MyVector3f.java"
+    },
+    {
+      "source": "jme3utilities/math/MyVolume.java",
+      "sha256": "2047f4647731000af31454f54a01c848d2b9d07821c4567e7b3260ba5e1be117",
+      "output": "src/main/java/jme3utilities/math/MyVolume.java"
+    },
+    {
+      "source": "jme3utilities/math/noise/Generator.java",
+      "sha256": "88848e1b8553c13a4f806888dcf995ba7907f62bceb394430b13e7f918332698",
+      "output": "src/main/java/jme3utilities/math/noise/Generator.java"
+    },
+    {
+      "source": "jme3utilities/math/noise/package-info.java",
+      "sha256": "00f5b5401694adbeac81180a95f978ed5766e7f3763794bdb41c4bd206c15ec0",
+      "output": "src/main/java/jme3utilities/math/noise/package-info.java"
+    },
+    {
+      "source": "jme3utilities/math/package-info.java",
+      "sha256": "1c39cd96682ba4ad4c8b44c9cb047733c402af7c9eaae04870556903aa00512d",
+      "output": "src/main/java/jme3utilities/math/package-info.java"
+    },
+    {
+      "source": "jme3utilities/math/RectangularSolid.java",
+      "sha256": "6c1735d13ffc45b026d3941874cb4d1c812548809fa0b7ce6fef6acd53fbfaf7",
+      "output": "src/main/java/jme3utilities/math/RectangularSolid.java"
+    },
+    {
+      "source": "jme3utilities/math/VectorSet.java",
+      "sha256": "b47d97b50966878af8c5e7e9bac3c73d52b8f8c790d0ed072f4e43d3c8c0d59f",
+      "output": "src/main/java/jme3utilities/math/VectorSet.java"
+    },
+    {
+      "source": "jme3utilities/math/VectorSetUsingBuffer.java",
+      "sha256": "4e52930b27258ef4fbaab63552eea7909b05f0df0214fb477a33e0ee300fe8ed",
+      "output": "src/main/java/jme3utilities/math/VectorSetUsingBuffer.java"
+    },
+    {
+      "source": "jme3utilities/minie/DumpFlags.java",
+      "sha256": "915cc03d2f06f069d9fdbf4501d1089d224163fbd0e3d0e357cecc1f0001ad83",
+      "output": "src/main/java/jme3utilities/minie/DumpFlags.java"
+    },
+    {
+      "source": "jme3utilities/minie/MyPco.java",
+      "sha256": "53ad754078447360d8af5c93ee7d66ddc82dc8e1233173fc7d58bec9aa2d9933",
+      "output": "src/main/java/jme3utilities/minie/MyPco.java"
+    },
+    {
+      "source": "jme3utilities/minie/MyShape.java",
+      "sha256": "dfa5cea96af1b6f836068f139a89e152f7f3d1be3b2bb2989245ba667903d25d",
+      "output": "src/main/java/jme3utilities/minie/MyShape.java"
+    },
+    {
+      "source": "jme3utilities/minie/package-info.java",
+      "sha256": "28ed542fb9bc8e9cb595f7489d40d2a0219226f7f4183dfc1ba88c4dc193fad8",
+      "output": "src/main/java/jme3utilities/minie/package-info.java"
+    },
+    {
+      "source": "jme3utilities/minie/PhysicsDescriber.java",
+      "sha256": "e495d14098c3edc62e056765febc580d4699d4ff4d40756d61f6a8d879623b3d",
+      "output": "src/main/java/jme3utilities/minie/PhysicsDescriber.java"
+    },
+    {
+      "source": "jme3utilities/minie/PhysicsDumper.java",
+      "sha256": "16e8ce1cd9e60802d249606ae7ba444a95bb35bb504a4f6c700972d9cbff235d",
+      "output": "src/main/java/jme3utilities/minie/PhysicsDumper.java"
+    },
+    {
+      "source": "jme3utilities/minie/TestApp.java",
+      "sha256": "475c049f1b0d634947bc0c60f90c4bec409dff15eb15439e90f82ecc4d3f8ecb",
+      "output": "src/main/java/jme3utilities/minie/TestApp.java"
+    },
+    {
+      "source": "jme3utilities/MyString.java",
+      "sha256": "4f1bc1684f8d46e37577041e11ba8801a947b490c3a8e567682b3634aad812a2",
+      "output": "src/main/java/jme3utilities/MyString.java"
+    },
+    {
+      "source": "jme3utilities/package-info.java",
+      "sha256": "48dc9595923b1fa1c6b01ce3b5d722752dba2ef9ca7e711c0e2d145a4b02c2df",
+      "output": "src/main/java/jme3utilities/package-info.java"
+    },
+    {
+      "source": "jme3utilities/Validate.java",
+      "sha256": "1fc2a13e646995bde9955115fb996f8281fa53be1171fd36ab610680c6f5d1c0",
+      "output": "src/main/java/jme3utilities/Validate.java"
+    },
+    {
+      "source": "vhacd/ACDMode.java",
+      "sha256": "036825dcf7bb4b2da024d6832e7967dd8e7848f870226855cfd19ea732c18693",
+      "output": "src/main/java/vhacd/ACDMode.java"
+    },
+    {
+      "source": "vhacd/package-info.java",
+      "sha256": "c7fd0e34a9c3a05a8caa70a927568e3ba6a5032be179051de554fddca1dd7242",
+      "output": "src/main/java/vhacd/package-info.java"
+    },
+    {
+      "source": "vhacd/VHACD.java",
+      "sha256": "91da054f754651a35b725dd7287798c252727f73571473483c1009bd8a4482af",
+      "output": "src/main/java/vhacd/VHACD.java"
+    },
+    {
+      "source": "vhacd/VHACDHull.java",
+      "sha256": "3a935cd1dc5abc75ef1cdfd47b8e4da098022b0c2af4fde86d04d76fffef0665",
+      "output": "src/main/java/vhacd/VHACDHull.java"
+    },
+    {
+      "source": "vhacd/VHACDParameters.java",
+      "sha256": "9fa57b112be9035bde0274ef96a6c1de3bb5d730df61f73309395226b9d88b4e",
+      "output": "src/main/java/vhacd/VHACDParameters.java"
+    },
+    {
+      "source": "vhacd/VHACDProgressListener.java",
+      "sha256": "dabef192be5f1ad4e3dbf124c6397c4df53795c9eaf76e4caccea96dff8c4c54",
+      "output": "src/main/java/vhacd/VHACDProgressListener.java"
+    },
+    {
+      "source": "vhacd4/package-info.java",
+      "sha256": "84b4eb70c196f126362b9adf6f4ab9f0368b2bbbda258867a5d47d25981c6139",
+      "output": "src/main/java/vhacd4/package-info.java"
+    },
+    {
+      "source": "vhacd4/Vhacd4.java",
+      "sha256": "745f8117f3ce7ae43380ecbb58156809cdf34b914fc8ce0606f4b199756cfc38",
+      "output": "src/main/java/vhacd4/Vhacd4.java"
+    },
+    {
+      "source": "vhacd4/Vhacd4Hull.java",
+      "sha256": "e3ff16906b72186c68bc64626e4011218bfd72544a08983ef4c70be0da0d8bf3",
+      "output": "src/main/java/vhacd4/Vhacd4Hull.java"
+    },
+    {
+      "source": "vhacd4/Vhacd4Parameters.java",
+      "sha256": "ecd6e9a223698bca477f5df27a3c459330999610dbe5c5e82ea899ce8e8edd64",
+      "output": "src/main/java/vhacd4/Vhacd4Parameters.java"
+    },
+    {
+      "source": "com/jme3/bullet/collision/PhysicsCollisionObject.java",
+      "sha256": "ab9e0e1b7e236432ba1130a7701c834bf80c2fc39f203d4595e0380797d23bc5",
+      "output": "src/main/java/com/jme3/bullet/collision/PhysicsCollisionObject.java"
+    }
+  ]
+}

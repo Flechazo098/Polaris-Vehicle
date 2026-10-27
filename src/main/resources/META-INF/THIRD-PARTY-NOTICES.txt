@@ -1,0 +1,26 @@
+Polaris Vehicle third-party source and binary notices
+
+SparkCore physical runtime, extracted from version 1.0.1031:
+Copyright (c) 2026 曦月 (SolarMoon), and upstream contributors including Sweetzonzi.
+Licensed under MIT. Full license: META-INF/licenses/SparkCore-MIT.txt.
+Upstream: https://github.com/SolarMoonQAQ/spark-core-minecraft
+Reproduction: tools/extract_sparkcore_physics.py
+Source provenance: META-INF/sparkcore-extraction.json
+
+The extracted SparkCore package is a modified version of its original physics
+code. Animation, state machines, Molang/scripts, player/entity proxy rigid bodies,
+client terrain sync and projectile index persistence are not included. Solver,
+suspension, terrain snapshot/build and contact semantics are retained. Polaris
+changes include package relocation, section-boundary lookup, and preserving 50ms
+elapsed time when the original worker reduces its substep count. Original
+copyrights remain; the enclosing Polaris original code remains MIT.
+
+Bullet native/Java runtime uses unchanged com.jme3 JNI names and native libraries
+from the same SparkCore distribution. Individual BSD notices copied from upstream
+source headers are in META-INF/licenses/com-jme3.txt, com-simsilica.txt,
+jme3utilities.txt, vhacd.txt, vhacd4.txt. These notices apply to those libraries;
+they are not relicensed under MIT.
+
+GeckoLib 4.9.2 is included as an unchanged Jar-in-Jar dependency; its upstream
+license and metadata remain inside its own jar. KotlinForForge and Kotlin
+coroutines are likewise included as library dependencies with their licenses.

@@ -1,0 +1,9 @@
+// Share client-only fixtures without exposing them to server or JUnit launches.
+def clientRuntimeSources = sourceSets.create('clientRuntime') {
+    compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+    runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath + rootProject.configurations.clientModRuntime
+}
+
+neoForge.runs.configureEach {
+    if (name == 'client') sourceSet = clientRuntimeSources
+}

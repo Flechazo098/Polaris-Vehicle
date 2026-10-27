@@ -1,0 +1,20 @@
+{
+  "itemGroup.polaris_vehicle_more_liveries.skin_paints": "北极星载具-更多涂装",
+  "tooltip.polaris_vehicle_more_liveries.skin_paint": "按车型喷上该颜色的皮肤",
+  "tooltip.polaris_vehicle_more_liveries.skin_paint.vehicles": "适用载具：",
+  "item.polaris_vehicle_more_liveries.white_skin_vehicle_paint": "白色皮肤喷漆",
+  "item.polaris_vehicle_more_liveries.black_skin_vehicle_paint": "黑色皮肤喷漆",
+  "item.polaris_vehicle_more_liveries.blue_skin_vehicle_paint": "蓝色皮肤喷漆",
+  "item.polaris_vehicle_more_liveries.pink_skin_vehicle_paint": "粉色皮肤喷漆",
+  "item.polaris_vehicle_more_liveries.green_skin_vehicle_paint": "绿色皮肤喷漆",
+  "item.polaris_vehicle_more_liveries.red_skin_vehicle_paint": "红色皮肤喷漆",
+  "tooltip.polaris_vehicle_more_liveries.formula_car_fire": "方程式赛车-§6火焰",
+  "tooltip.polaris_vehicle_more_liveries.rally_car_fire": "拉力赛车-§6火焰",
+  "tooltip.polaris_vehicle_more_liveries.convertible_ice_cream": "敞篷车-§6甜筒冰淇淋",
+  "tooltip.polaris_vehicle_more_liveries.kart_python": "卡丁车-§6蟒蛇",
+  "tooltip.polaris_vehicle_more_liveries.suv_classic_cartoon": "SUV-§6经典卡通",
+  "tooltip.polaris_vehicle_more_liveries.small_car_classic_cartoon": "三轮代步车-§6经典卡通",
+  "tooltip.polaris_vehicle_more_liveries.elderly_car_classic_cartoon": "单人代步车-§6经典卡通",
+  "tooltip.polaris_vehicle_more_liveries.two_seat_car_classic_cartoon": "双人代步车-§6经典卡通",
+  "tooltip.polaris_vehicle_more_liveries.small_bus_cat_bus": "小型巴士-§6猫巴士"
+}

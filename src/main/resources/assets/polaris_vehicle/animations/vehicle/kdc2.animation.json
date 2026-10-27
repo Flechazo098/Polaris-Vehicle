@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.kdc2.turn_left": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-3.07251, 2.1099, -4.56927]
+				},
+				"wheelMainPart": {
+					"rotation": [0, 12.5, 0]
+				}
+			}
+		},
+		"animation.kdc2.turn_right": {
+			"loop": true,
+			"bones": {
+				"wheelMainPart": {
+					"rotation": [0, -12.5, 0]
+				},
+				"rightArm": {
+					"rotation": [-3.07251, -2.1099, 4.56927]
+				},
+				"leftArm": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		}
+	}
+}

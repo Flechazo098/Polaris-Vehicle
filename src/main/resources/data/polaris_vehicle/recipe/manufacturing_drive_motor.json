@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "part",
+  "materials": [
+    { "item": "polaris_vehicle:alloy_ingot", "count": 3 },
+    { "item": "minecraft:copper_ingot", "count": 3 },
+    { "item": "minecraft:redstone", "count": 3 }
+  ],
+  "result": { "id": "polaris_vehicle:drive_motor", "count": 1 }
+}

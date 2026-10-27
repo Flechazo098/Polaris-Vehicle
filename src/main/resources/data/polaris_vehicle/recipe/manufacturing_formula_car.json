@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "vehicle",
+  "materials": [
+    { "item": "polaris_vehicle:compressed_alloy_plate", "count": 32 },
+    { "item": "minecraft:redstone", "count": 32 },
+    { "item": "minecraft:netherite_scrap", "count": 16 }
+  ],
+  "result": { "id": "polaris_vehicle:formula_car_vehicle", "count": 1 }
+}

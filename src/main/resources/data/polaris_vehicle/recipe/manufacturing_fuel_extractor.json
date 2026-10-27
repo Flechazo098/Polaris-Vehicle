@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "block",
+  "materials": [
+    { "item": "minecraft:furnace", "count": 1 },
+    { "item": "minecraft:iron_ingot", "count": 9 }
+  ],
+  "result": { "id": "polaris_vehicle:fuel_extractor", "count": 1 }
+}

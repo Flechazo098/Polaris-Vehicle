@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humanoid.turn_left": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-9.10234, -0.14997, -15.08411]
+				}
+			}
+		},
+		"animation.humanoid.turn_right": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-9.10234, 0.14997, 15.08411]
+				},
+				"leftArm": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		}
+	}
+}

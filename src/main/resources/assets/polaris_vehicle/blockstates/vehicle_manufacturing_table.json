@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "polaris_vehicle:block/vehicle_manufacturing_table",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "polaris_vehicle:block/vehicle_manufacturing_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "polaris_vehicle:block/vehicle_manufacturing_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "polaris_vehicle:block/vehicle_manufacturing_table",
+      "y": 270
+    }
+  }
+}

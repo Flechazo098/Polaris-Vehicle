@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "block",
+  "materials": [
+    { "item": "minecraft:stone", "count": 1 },
+    { "item": "minecraft:sand", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:mimic_third_ramp_1", "count": 1 }
+}

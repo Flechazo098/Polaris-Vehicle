@@ -1,0 +1,3 @@
+# Polaris Vehicle test ramp material
+newmtl ramp
+map_Kd polaris_vehicle:block/concrete_ramp

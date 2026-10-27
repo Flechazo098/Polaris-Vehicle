@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tool",
+  "materials": [
+    { "item": "minecraft:piston", "count": 1 },
+    { "item": "minecraft:copper_ingot", "count": 1 },
+    { "item": "minecraft:repeater", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:portable_jack", "count": 1 }
+}

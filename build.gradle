@@ -1,0 +1,70 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '2.3.0'
+    id 'net.neoforged.moddev' version '2.0.143'
+    id 'org.openrewrite.rewrite' version '7.39.0'
+    id 'polaris.mod-conventions'
+    id 'polaris.physics'
+    id 'polaris.vehicle-resources'
+    id 'polaris.client-compat'
+    id 'polaris.client-runtime'
+    id 'polaris.driving-tests'
+}
+
+configurations.named('jarJar') { transitive = false }
+
+dependencies {
+    [
+            "cc.sighs.oelib:oelib-neoforge-${minecraft_version}:${oelib_version}",
+            "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}",
+            "thedarkcolour:kotlinforforge-neoforge:${kotlinforforge_version}",
+            "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${coroutines_version}"
+    ].each { library ->
+        implementation library
+        jarJar library
+    }
+    ['kfflang', 'kfflib', 'kffmod'].each { module ->
+        jarJar "thedarkcolour:${module}-neoforge:${kotlinforforge_version}"
+    }
+
+    implementation "curse.maven:spark-361579:${spark_file}"
+    implementation "curse.maven:accelerated-rendering-1314021:${accelerated_rendering_file}"
+    compileOnly "curse.maven:irisshaders-455508:${iris_file}"
+    compileOnly "curse.maven:sodium-394468:${sodium_file}"
+    testImplementation "org.junit.jupiter:junit-jupiter:${junit_version}"
+}
+
+neoForge.runs {
+    client { client() }
+    server {
+        server()
+        gameDirectory = project.file('run-server')
+    }
+    gameTestServer {
+        type = 'gameTestServer'
+        gameDirectory = project.file('build/gameTestRun')
+    }
+    data {
+        data()
+        programArguments.addAll '--mod', project.mod_id, '--all',
+                '--output', file('src/generated/resources').absolutePath,
+                '--existing', file('src/main/resources').absolutePath
+    }
+    configureEach {
+        if (name in ['client', 'server', 'gameTestServer']) {
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        systemProperty 'forge.logging.markers', 'REGISTRIES'
+        logLevel = org.slf4j.event.Level.DEBUG
+    }
+}
+
+// Bind the add-on in development without bundling it into the main mod JAR.
+evaluationDependsOn(':more_liveries')
+neoForge.mods {
+    polaris_vehicle_more_liveries { sourceSet(project(':more_liveries').sourceSets.main) }
+}
+
+rewrite {
+    activeRecipe('org.openrewrite.java.ShortenFullyQualifiedTypeReferences')
+    exclusion('build.gradle', '**/build.gradle', '**/*.gradle', '**/*.gradle.kts')
+}

@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tire",
+  "materials": [
+    { "item": "polaris_vehicle:alloy_ingot", "count": 2 },
+    { "item": "polaris_vehicle:slime_rubber", "count": 8 }
+  ],
+  "result": { "id": "polaris_vehicle:racing_endurance_tire", "count": 1 }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ltl_car.turn_left": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-9.01733, 5.0468, -11.84129]
+				},
+				"wheelMain": {
+					"rotation": [0, 0, -15]
+				}
+			}
+		},
+		"animation.ltl_car.turn_right": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-9.01733, -5.0468, 11.84129]
+				},
+				"leftArm": {
+					"rotation": [5, 0, 0]
+				},
+				"wheelMain": {
+					"rotation": [0, 0, 15]
+				}
+			}
+		}
+	}
+}

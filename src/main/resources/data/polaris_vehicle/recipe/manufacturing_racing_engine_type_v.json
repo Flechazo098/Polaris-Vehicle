@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "part",
+  "materials": [
+    { "item": "polaris_vehicle:compressed_alloy_plate", "count": 24 },
+    { "item": "minecraft:emerald", "count": 16 },
+    { "item": "minecraft:netherite_scrap", "count": 2 }
+  ],
+  "result": { "id": "polaris_vehicle:racing_engine_type_v", "count": 1 }
+}

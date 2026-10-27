@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bus.turn_right": {
+			"loop": true,
+			"bones": {
+				"leftTire2": {
+					"rotation": [0, -15, 0]
+				},
+				"rightTire2": {
+					"rotation": [0, -15, 0]
+				},
+				"rightArm": {
+					"rotation": [-3.38684, -8.85586, 5.76454]
+				},
+				"leftArm": {
+					"rotation": [7.5, 0, 0]
+				},
+				"wheelMain": {
+					"rotation": [0, 0, 20]
+				}
+			}
+		},
+		"animation.bus.turn_left": {
+			"loop": true,
+			"bones": {
+				"leftTire2": {
+					"rotation": [0, 15, 0]
+				},
+				"rightTire2": {
+					"rotation": [0, 15, 0]
+				},
+				"rightArm": {
+					"rotation": [7.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-2.28241, 7.51351, -11.49439]
+				},
+				"wheelMain": {
+					"rotation": [0, 0, -20]
+				}
+			}
+		}
+	}
+}

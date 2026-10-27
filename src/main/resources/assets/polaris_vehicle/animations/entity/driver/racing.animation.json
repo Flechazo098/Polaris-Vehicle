@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humanoid.turn_left": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [12.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-7.66244, 5.01602, -7.48396]
+				}
+			}
+		},
+		"animation.humanoid.turn_right": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-9.01343, -2.40821, 10.10315]
+				},
+				"leftArm": {
+					"rotation": [12.5, 0, 0]
+				}
+			}
+		},
+		"animation.unknown.turn_left": {
+			"loop": true,
+			"bones": {
+				"wheelMain": {
+					"rotation": [0, 0, -15]
+				},
+				"rightArm": {
+					"rotation": [12.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-7.66244, 5.01602, -7.48396]
+				}
+			}
+		},
+		"animation.unknown.turn_right": {
+			"loop": true,
+			"bones": {
+				"wheelMain": {
+					"rotation": [0, 0, 15]
+				},
+				"rightArm": {
+					"rotation": [-9.01343, -2.40821, 10.10315]
+				},
+				"leftArm": {
+					"rotation": [12.5, 0, 0]
+				}
+			}
+		}
+	}
+}

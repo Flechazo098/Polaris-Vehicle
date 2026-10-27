@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.unknown.turrn_left": {
+			"loop": true
+		},
+		"animation.unknown.turn_left": {
+			"loop": true,
+			"bones": {
+				"wheelMain": {
+					"rotation": [0, 0, -15]
+				},
+				"rightArm": {
+					"rotation": [5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-11.28048, 2.94599, -9.64246]
+				}
+			}
+		},
+		"animation.unknown.turn_right": {
+			"loop": true,
+			"bones": {
+				"wheelMain": {
+					"rotation": [0, 0, 15]
+				},
+				"rightArm": {
+					"rotation": [-13.05809, -5.63551, 19.43715]
+				},
+				"leftArm": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		}
+	}
+}

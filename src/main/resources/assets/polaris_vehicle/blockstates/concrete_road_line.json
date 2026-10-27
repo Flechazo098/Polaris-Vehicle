@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "polaris_vehicle:block/concrete_road_line" },
+    "facing=east": { "model": "polaris_vehicle:block/concrete_road_line", "y": 90 },
+    "facing=south": { "model": "polaris_vehicle:block/concrete_road_line", "y": 180 },
+    "facing=west": { "model": "polaris_vehicle:block/concrete_road_line", "y": 270 }
+  }
+}

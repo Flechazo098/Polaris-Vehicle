@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.slc_ltl.turn_left": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-2.05553, -5.36029, -4.18191],
+					"position": [0, 0, 0.9]
+				},
+				"leftArm": {
+					"rotation": [-0.60661, -9.95333, -5.06899],
+					"position": [0, 0, -1.7]
+				},
+				"wheelMain": {
+					"rotation": [0, 15, 0]
+				},
+				"leftTire3": {
+					"rotation": [0, 12.5, 0]
+				},
+				"wheelPart": {
+					"rotation": [0, 12.5, 0]
+				}
+			}
+		},
+		"animation.slc_ltl.turn_right": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [-5.65011, 9.89513, 4.80889],
+					"position": [0, 0, -2]
+				},
+				"leftArm": {
+					"rotation": [-1.50803, -2.10271, 4.88941],
+					"position": [-2.15, 0, 1.25]
+				},
+				"wheelMain": {
+					"rotation": [0, -15, 0]
+				},
+				"leftTire3": {
+					"rotation": [0, -12.5, 0]
+				},
+				"wheelPart": {
+					"rotation": [0, -12.5, 0]
+				}
+			}
+		}
+	}
+}

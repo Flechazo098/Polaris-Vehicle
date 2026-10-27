@@ -1,0 +1,102 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 曦月 (SolarMoon) and SparkCore contributors.
+// Extracted from SparkCore 1.0.1031: physics/level/PhysicsLevelApplier.kt
+// Polaris changes are reproducible in tools/extract_sparkcore_physics.py.
+package com.flechazo.polaris_vehicle.sparkcore.physics.level
+
+import com.flechazo.polaris_vehicle.sparkcore.api.physicsLevel
+import com.flechazo.polaris_vehicle.sparkcore.api.processTasks
+import com.flechazo.polaris_vehicle.sparkcore.event.PhysicsLevelInitEvent
+import com.flechazo.polaris_vehicle.sparkcore.mixin_interface.ILevelMixin
+import com.flechazo.polaris_vehicle.sparkcore.util.PPhase
+import net.minecraft.server.level.ServerLevel
+import net.minecraft.world.level.ChunkPos
+import net.minecraft.world.level.Level
+import net.minecraft.world.level.chunk.LevelChunk
+import net.neoforged.bus.api.EventPriority
+import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.neoforge.common.NeoForge
+import net.neoforged.neoforge.event.level.ChunkEvent
+import net.neoforged.neoforge.event.level.ChunkTicketLevelUpdatedEvent
+import net.neoforged.neoforge.event.level.LevelEvent
+import net.neoforged.neoforge.event.tick.LevelTickEvent
+
+object PhysicsLevelApplier {
+
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    private fun load(event: LevelEvent.Load) {
+        val level = event.level
+        if (level is Level) {
+            // 初始化物理世界(客户端在客户端监听器进行)
+            if (level is ServerLevel) {
+                val singleThread = false // original default; no unrelated Spark config
+                (level as ILevelMixin).setPhysicsLevel(ServerPhysicsLevel(level as ServerLevel, 5, singleThread))
+                level.physicsLevel.start {
+                    // 从 Attachment 恢复区块高程索引（投影片加载前恢复索引数据）
+                    // 广播通知物理世界初始化完成
+                    NeoForge.EVENT_BUS.post(PhysicsLevelInitEvent(level.physicsLevel))
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    private fun unLoad(event: LevelEvent.Unload) {
+        val level = event.level
+        if (level is ServerLevel) {
+            level.physicsLevel.close()
+        }
+    }
+
+    /**
+     * 世界保存时持久化区块高程索引到 Attachment。
+     */
+    @SubscribeEvent(priority = EventPriority.HIGH)
+    private fun mcLevelTask(event: LevelTickEvent.Pre) {
+        val level = event.level
+        if (level !is ServerLevel) return
+        level.processTasks(PPhase.ALL)
+        level.processTasks(PPhase.PRE)
+    }
+
+    @SubscribeEvent(priority = EventPriority.HIGH)
+    private fun mcLevelTask(event: LevelTickEvent.Post) {
+        val level = event.level
+        if (level !is ServerLevel) return
+        level.processTasks(PPhase.ALL)
+        level.processTasks(PPhase.POST)
+        level.physicsLevel.requestStep()
+    }
+
+    /**
+     * 区块加载时触发地形刚体管理器相关方法
+     */
+    @SubscribeEvent
+    private fun chunkLoad(event: ChunkEvent.Load) {
+        val level = event.level as? ServerLevel ?: return
+        val physLevel: PhysicsLevel = level.physicsLevel
+        physLevel.terrainManager.onChunkLoaded(event.chunk.pos, event.chunk as LevelChunk)
+    }
+
+    /**
+     * 区块卸载时触发地形刚体管理器相关方法
+     */
+    @SubscribeEvent
+    private fun chunkUnload(event: ChunkEvent.Unload) {
+        val level = event.level as? ServerLevel ?: return
+        val physLevel: PhysicsLevel = level.physicsLevel
+        physLevel.terrainManager.onChunkUnloaded(event.chunk.pos)
+    }
+
+    @SubscribeEvent
+    private fun chunkTicketUpdate(event: ChunkTicketLevelUpdatedEvent) {
+        val level = event.level as? ServerLevel ?: return
+        val physLevel: PhysicsLevel = level.physicsLevel
+        val chunkPos = ChunkPos(event.chunkPos)
+        // 卸载优先级过低的物理区块，而非等到区块卸载事件触发
+        if (event.newTicketLevel > 33 && physLevel.tickCount > 0 && physLevel.terrainManager.loaded(chunkPos)) {
+            physLevel.terrainManager.unloadPhysicsChunk(chunkPos)
+        }
+    }
+
+}

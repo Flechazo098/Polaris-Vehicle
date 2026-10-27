@@ -1,0 +1,8 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "part",
+  "materials": [
+    { "item": "polaris_vehicle:alloy_ingot", "count": 2 }
+  ],
+  "result": { "id": "polaris_vehicle:compressed_alloy_plate", "count": 1 }
+}

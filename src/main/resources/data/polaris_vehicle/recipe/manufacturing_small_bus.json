@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "vehicle",
+  "materials": [
+    { "item": "polaris_vehicle:compressed_alloy_plate", "count": 32 },
+    { "item": "minecraft:quartz", "count": 64 }
+  ],
+  "result": { "id": "polaris_vehicle:small_bus_vehicle", "count": 1 }
+}

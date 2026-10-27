@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "block",
+  "materials": [
+    { "item": "minecraft:gravel", "count": 1 },
+    { "item": "minecraft:coal", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:asphalt_road", "count": 16 }
+}

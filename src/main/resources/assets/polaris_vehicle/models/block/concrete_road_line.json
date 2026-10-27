@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "polaris_vehicle:block/concrete_road",
+    "side": "polaris_vehicle:block/concrete_road",
+    "top": "polaris_vehicle:block/concrete_road_line"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "paint",
+  "materials": [
+    {
+      "item": "polaris_vehicle:red_vehicle_paint",
+      "count": 1
+    },
+    {
+      "item": "minecraft:emerald",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "polaris_vehicle_more_liveries:red_skin_vehicle_paint",
+    "count": 1
+  }
+}

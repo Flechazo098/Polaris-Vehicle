@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tool",
+  "materials": [
+    { "item": "minecraft:bucket", "count": 1 },
+    { "item": "minecraft:green_dye", "count": 8 },
+    { "item": "polaris_vehicle:slime_rubber", "count": 2 }
+  ],
+  "result": { "id": "polaris_vehicle:large_fuel_tank", "count": 1 }
+}

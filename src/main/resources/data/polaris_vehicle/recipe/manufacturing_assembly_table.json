@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "block",
+  "materials": [
+    { "item": "minecraft:anvil", "count": 1 },
+    { "item": "polaris_vehicle:alloy_ingot", "count": 9 }
+  ],
+  "result": { "id": "polaris_vehicle:assembly_table", "count": 1 }
+}

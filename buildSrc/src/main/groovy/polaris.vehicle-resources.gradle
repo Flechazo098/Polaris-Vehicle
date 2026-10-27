@@ -1,0 +1,22 @@
+// Generate server collision structures from the same authored client models.
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+def vehicleStructureModels = [
+        'kdc2_shelf.geo.json'    : 'kart.json',
+        'ltl_car_shelf.geo.json' : 'elderly_car.json',
+        'bus_shelf.geo.json'     : 'small_bus.json',
+        'slc_ltl_shelf.geo.json' : 'small_car.json',
+        'ltl_car2_shelf.geo.json': 'two_seat_car.json',
+        'suv_shelf.geo.json'     : 'suv.json',
+        'mini_car_shelf.geo.json': 'convertible.json',
+        'f1_shelf.geo.json'      : 'formula_car.json',
+        'racing_shelf.geo.json'  : 'rally_car.json'
+]
+
+tasks.named('processResources', ProcessResources) {
+    from('src/main/resources/assets/polaris_vehicle/geo/vehicle') {
+        include vehicleStructureModels.keySet()
+        into 'data/polaris_vehicle/vehicle_structures'
+        rename { sourceName -> vehicleStructureModels[sourceName] }
+    }
+}

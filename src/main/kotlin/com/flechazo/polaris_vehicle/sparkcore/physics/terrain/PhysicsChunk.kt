@@ -1,0 +1,145 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 曦月 (SolarMoon) and SparkCore contributors.
+// Extracted from SparkCore 1.0.1031: physics/terrain/PhysicsChunk.kt
+// Polaris changes are reproducible in tools/extract_sparkcore_physics.py.
+package com.flechazo.polaris_vehicle.sparkcore.physics.terrain
+
+import com.flechazo.polaris_vehicle.sparkcore.physics.level.PhysicsLevel
+import net.minecraft.core.BlockPos
+import net.minecraft.core.SectionPos
+import net.minecraft.world.level.ChunkPos
+import net.minecraft.world.level.chunk.LevelChunk
+
+/**
+ * 管理一个完整区块（16x256x16）的物理表示
+ * 将区块划分为多个section进行独立管理
+ *
+ * @property chunkPos 区块坐标
+ * @property physicsLevel 所属物理世界
+ * @property chunk 对应的MC区块对象，仅在构造时使用
+ */
+class PhysicsChunk(
+    val chunkPos: ChunkPos,
+    val physicsLevel: PhysicsLevel,
+    val chunk: LevelChunk
+) {
+    private val sections = mutableMapOf<Int, PhysicsChunkSection>()
+    private var isLoaded = false
+
+    /**
+     * 异步加载区块物理表示
+     */
+    fun load() {
+        if (isLoaded) return
+
+        val minSection = physicsLevel.mcLevel.minSection
+        val maxSection = physicsLevel.mcLevel.maxSection
+
+        for (sectionY in minSection until maxSection) {
+            val sectionPos = SectionPos.of(chunkPos, sectionY)
+            val physicsSection = PhysicsChunkSection(sectionPos, physicsLevel, chunk)
+
+            sections[sectionY] = physicsSection
+        }
+
+        isLoaded = true
+    }
+
+    /**
+     * 卸载区块，清理所有资源
+     */
+    fun unload() {
+        sections.values.forEach {it.destroy()}
+        sections.clear()
+        isLoaded = false
+    }
+
+    /**
+     * 一次性激活指定范围内的所有section
+     */
+    fun activateSectionsInRanges(ranges: List<IntRange>) {
+        mayHaveActive = true
+        sections.values.forEach { section ->
+            val sectionY = section.sectionPos.y
+            val shouldActivate = ranges.any { range -> sectionY in range }
+
+            if (shouldActivate) {
+                section.requestBuild(physicsLevel.terrainManager)
+                section.activate()
+            } else {
+                // 如果section当前是激活状态但不在新范围内，则停用
+                if (section.isActive) {
+                    section.deactivate()
+                }
+            }
+        }
+    }
+
+    /** Prepare the sections in these ranges ahead of a vehicle arriving. */
+    fun requestBuild(ranges: List<IntRange>) {
+        sections.values.forEach { section ->
+            if (ranges.any { section.sectionPos.y in it }) section.requestBuild(physicsLevel.terrainManager)
+        }
+    }
+
+    /** Game time this chunk was last near a body or scheduled terrain. */
+    @Volatile
+    var lastUsedTick = 0L
+
+    /**
+     * 一次性停用指定范围内的所有section
+     */
+    fun deactivateSectionsInRanges(ranges: List<IntRange>) {
+        sections.values.forEach { section ->
+            val sectionY = section.sectionPos.y
+            val shouldDeactivate = ranges.any { range -> sectionY in range }
+
+            if (shouldDeactivate && section.isActive) {
+                section.deactivate()
+            }
+        }
+    }
+
+    /**
+     * 激活所有section
+     */
+    fun activateAll() {
+        mayHaveActive = true
+        sections.values.forEach { it.activate() }
+    }
+
+    /**
+     * 停用所有section
+     */
+    fun deactivateAll() {
+        if (!mayHaveActive) return
+        sections.values.forEach { it.deactivate() }
+        mayHaveActive = false
+    }
+
+    /** False only once every section is known to be inactive. */
+    private var mayHaveActive = false
+
+    /**
+     * 获取指定位置的section
+     */
+    fun getSection(sectionY: Int): PhysicsChunkSection? = sections[sectionY]
+
+    /**
+     * 获取指定方块位置的section
+     */
+    fun getSectionForBlockPos(blockPos: BlockPos): PhysicsChunkSection? {
+        val sectionY = SectionPos.blockToSectionCoord(blockPos.y)
+        return sections[sectionY]
+    }
+
+    /**
+     * 获取所有活跃的section数量
+     */
+    fun getActiveSectionCount(): Int = sections.values.count { it.isActive && !it.isEmpty() }
+
+    /**
+     * 获取所有section数量
+     */
+    fun getTotalSectionCount(): Int = sections.values.count { it.buildRequested }
+}

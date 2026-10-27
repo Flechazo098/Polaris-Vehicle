@@ -1,0 +1,45 @@
+import groovy.json.JsonSlurper
+
+// Reproduce the embedded runtime and package its original native resources/notices.
+def sparkVersion = project.property('spark_core_version')
+def sparkExtractionManifest = file('src/main/resources/META-INF/sparkcore-extraction.json')
+def extractedSparkSources = sparkExtractionManifest.exists()
+        ? new JsonSlurper().parse(sparkExtractionManifest).sources.collect { file(it.output) }
+        : []
+// Published sources already contain the extracted runtime. Regeneration is a
+// local maintenance option and is not required to build a source checkout.
+def extractionInputs = [
+        file('tools/extract_sparkcore_physics.py'),
+        file("libs/SparkCore-${minecraft_version}-neoforge-${sparkVersion}.jar"),
+        file("libs/SparkCore-${minecraft_version}-neoforge-${sparkVersion}-sources.jar")
+]
+if (extractionInputs.every { it.isFile() }) {
+    def extractSparkCorePhysics = tasks.register('extractSparkCorePhysics', Exec) {
+        inputs.files('tools/extract_sparkcore_physics.py',
+                "libs/SparkCore-${minecraft_version}-neoforge-${sparkVersion}.jar",
+                "libs/SparkCore-${minecraft_version}-neoforge-${sparkVersion}-sources.jar",
+                'src/main/resources/META-INF/licenses/SparkCore-MIT.txt')
+        outputs.files(extractedSparkSources)
+        outputs.file(sparkExtractionManifest)
+        outputs.file("libs/polaris-bullet-runtime-${sparkVersion}.jar")
+        commandLine 'python', 'tools/extract_sparkcore_physics.py'
+    }
+    tasks.matching { it.name in ['compileKotlin', 'compileJava', 'processResources', 'jar', 'sourcesJar'] }.configureEach {
+        dependsOn(extractSparkCorePhysics)
+    }
+}
+
+// JNI Java wrappers compile into the mod; copy only the original binary notices.
+tasks.named('jar', Jar) {
+    from(zipTree("libs/polaris-bullet-runtime-${sparkVersion}.jar")) {
+        include 'META-INF/licenses/**'
+        exclude 'META-INF/licenses/SparkCore-MIT.txt'
+    }
+}
+
+// Development and JUnit use the same bundled native resources as the distributable.
+tasks.named('processResources', ProcessResources) {
+    from(zipTree("libs/polaris-bullet-runtime-${sparkVersion}.jar")) {
+        include 'natives/**'
+    }
+}

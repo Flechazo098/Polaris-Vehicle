@@ -1,0 +1,14 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "block",
+  "materials": [
+    {
+      "item": "polaris_vehicle:concrete_road",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "polaris_vehicle:concrete_third_ramp_1",
+    "count": 1
+  }
+}

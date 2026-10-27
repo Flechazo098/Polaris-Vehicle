@@ -1,0 +1,128 @@
+{
+  "formula_car_fire": {
+    "vehicle": "polaris_vehicle:formula_car",
+    "skin": "fire",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/formula_car_fire_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/formula_car_fire_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/formula_car_fire_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/formula_car_fire_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/formula_car_fire_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/formula_car_fire_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/formula_car_fire_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/formula_car_fire_control.geo.json"
+  },
+  "rally_car_fire": {
+    "vehicle": "polaris_vehicle:rally_car",
+    "skin": "fire",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/rally_car_fire_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/rally_car_fire_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/rally_car_fire_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/rally_car_fire_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/rally_car_fire_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/rally_car_fire_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/rally_car_fire_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/rally_car_fire_control.geo.json"
+  },
+  "convertible_ice_cream": {
+    "vehicle": "polaris_vehicle:convertible",
+    "skin": "ice_cream",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/convertible_ice_cream_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/convertible_ice_cream_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/convertible_ice_cream_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/convertible_ice_cream_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/convertible_ice_cream_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/convertible_ice_cream_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/convertible_ice_cream_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/convertible_ice_cream_control.geo.json"
+  },
+  "kart_python": {
+    "vehicle": "polaris_vehicle:kart",
+    "skin": "python",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/kart_python_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/kart_python_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/kart_python_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/kart_python_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/kart_python_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/kart_python_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/kart_python_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/kart_python_control.geo.json"
+  },
+  "suv_classic_cartoon": {
+    "vehicle": "polaris_vehicle:suv",
+    "skin": "classic_cartoon",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/suv_classic_cartoon_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/suv_classic_cartoon_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/suv_classic_cartoon_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/suv_classic_cartoon_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/suv_classic_cartoon_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/suv_classic_cartoon_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/suv_classic_cartoon_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/suv_classic_cartoon_control.geo.json"
+  },
+  "small_car_classic_cartoon": {
+    "vehicle": "polaris_vehicle:small_car",
+    "skin": "classic_cartoon",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_car_classic_cartoon_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_car_classic_cartoon_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_car_classic_cartoon_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_car_classic_cartoon_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_car_classic_cartoon_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_car_classic_cartoon_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/small_car_classic_cartoon_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/small_car_classic_cartoon_control.geo.json"
+  },
+  "elderly_car_classic_cartoon": {
+    "vehicle": "polaris_vehicle:elderly_car",
+    "skin": "classic_cartoon",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/elderly_car_classic_cartoon_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/elderly_car_classic_cartoon_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/elderly_car_classic_cartoon_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/elderly_car_classic_cartoon_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/elderly_car_classic_cartoon_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/elderly_car_classic_cartoon_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/elderly_car_classic_cartoon_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/elderly_car_classic_cartoon_control.geo.json"
+  },
+  "two_seat_car_classic_cartoon": {
+    "vehicle": "polaris_vehicle:two_seat_car",
+    "skin": "classic_cartoon",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/two_seat_car_classic_cartoon_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/two_seat_car_classic_cartoon_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/two_seat_car_classic_cartoon_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/two_seat_car_classic_cartoon_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/two_seat_car_classic_cartoon_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/two_seat_car_classic_cartoon_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/two_seat_car_classic_cartoon_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/two_seat_car_classic_cartoon_control.geo.json"
+  },
+  "small_bus_cat_bus": {
+    "vehicle": "polaris_vehicle:small_bus",
+    "skin": "cat_bus",
+    "textures": {
+      "white": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_bus_cat_bus_white.png",
+      "black": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_bus_cat_bus_black.png",
+      "blue": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_bus_cat_bus_blue.png",
+      "pink": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_bus_cat_bus_pink.png",
+      "green": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_bus_cat_bus_green.png",
+      "red": "polaris_vehicle_more_liveries:textures/entity/vehicle/small_bus_cat_bus_red.png"
+    },
+    "chassis": "polaris_vehicle_more_liveries:geo/vehicle/small_bus_cat_bus_chassis.geo.json",
+    "control": "polaris_vehicle_more_liveries:geo/vehicle/small_bus_cat_bus_control.geo.json"
+  }
+}

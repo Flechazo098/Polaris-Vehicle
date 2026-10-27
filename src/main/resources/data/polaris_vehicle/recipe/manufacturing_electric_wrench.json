@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tool",
+  "materials": [
+    { "item": "polaris_vehicle:alloy_ingot", "count": 1 },
+    { "item": "minecraft:redstone", "count": 1 },
+    { "item": "minecraft:iron_nugget", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:electric_wrench", "count": 1 }
+}

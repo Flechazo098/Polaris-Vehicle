@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tool",
+  "materials": [
+    { "item": "minecraft:iron_ingot", "count": 1 },
+    { "item": "minecraft:copper_ingot", "count": 1 },
+    { "item": "polaris_vehicle:alloy_ingot", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:hammer", "count": 1 }
+}

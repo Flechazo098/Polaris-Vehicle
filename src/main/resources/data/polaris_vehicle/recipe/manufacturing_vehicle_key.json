@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tool",
+  "materials": [
+    { "item": "polaris_vehicle:slime_rubber", "count": 1 },
+    { "item": "minecraft:iron_nugget", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:vehicle_key", "count": 1 }
+}

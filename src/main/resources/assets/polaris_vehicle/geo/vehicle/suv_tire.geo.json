@@ -1,0 +1,1807 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.suv_tire",
+        "texture_width": 512,
+        "texture_height": 512,
+        "visible_bounds_width": 9,
+        "visible_bounds_height": 7,
+        "visible_bounds_offset": [
+          0,
+          2.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "all",
+          "pivot": [
+            0,
+            1.5,
+            -16
+          ]
+        },
+        {
+          "name": "tire",
+          "parent": "all",
+          "pivot": [
+            -1.4375,
+            -3.09803,
+            -14.5
+          ]
+        },
+        {
+          "name": "leftTire1",
+          "parent": "tire",
+          "pivot": [
+            17.48438,
+            8.22997,
+            -32.9875
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_1",
+          "parent": "leftTire1",
+          "pivot": [
+            15.25,
+            0.80025,
+            -32
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_2",
+          "parent": "leftTire1_Contour1_1",
+          "pivot": [
+            12.25,
+            -0.19975,
+            -30.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_3",
+          "parent": "leftTire1_Contour1_2",
+          "pivot": [
+            12.25,
+            -0.19975,
+            -24.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_4",
+          "parent": "leftTire1_Contour1_3",
+          "pivot": [
+            12.25,
+            -0.19975,
+            -18.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_5",
+          "parent": "leftTire1_Contour1_4",
+          "pivot": [
+            12.25,
+            -0.19975,
+            -12.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_6",
+          "parent": "leftTire1_Contour1_5",
+          "pivot": [
+            12.25,
+            -0.19975,
+            -6.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_7",
+          "parent": "leftTire1_Contour1_6",
+          "pivot": [
+            12.25,
+            -0.19975,
+            -0.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_8",
+          "parent": "leftTire1_Contour1_7",
+          "pivot": [
+            12.25,
+            -0.19975,
+            5.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_1",
+          "parent": "leftTire1",
+          "pivot": [
+            15,
+            2.33947,
+            -31.5
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_2",
+          "parent": "leftTire1_inside1_1",
+          "pivot": [
+            12,
+            1.08947,
+            -29.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_3",
+          "parent": "leftTire1_inside1_2",
+          "pivot": [
+            12,
+            1.08947,
+            -23.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTirel1_inside1_4",
+          "parent": "leftTire1_inside1_3",
+          "pivot": [
+            12,
+            1.08947,
+            -17.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_5",
+          "parent": "leftTirel1_inside1_4",
+          "pivot": [
+            12,
+            1.08947,
+            -11.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_6",
+          "parent": "leftTire1_inside1_5",
+          "pivot": [
+            12,
+            1.08947,
+            -5.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_7",
+          "parent": "leftTire1_inside1_6",
+          "pivot": [
+            12,
+            1.08947,
+            0.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_8",
+          "parent": "leftTire1_inside1_7",
+          "pivot": [
+            12,
+            1.08947,
+            6.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone2",
+          "parent": "leftTire1",
+          "pivot": [
+            18.1875,
+            8.25,
+            -33
+          ]
+        },
+        {
+          "name": "bone3",
+          "parent": "leftTire1",
+          "pivot": [
+            18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            -72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone4",
+          "parent": "leftTire1",
+          "pivot": [
+            18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone5",
+          "parent": "leftTire1",
+          "pivot": [
+            18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone25",
+          "parent": "leftTire1",
+          "pivot": [
+            18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            -144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire2",
+          "parent": "tire",
+          "pivot": [
+            17.48438,
+            8.22997,
+            35.0125
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_9",
+          "parent": "leftTire2",
+          "pivot": [
+            15.25,
+            0.80025,
+            36
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_10",
+          "parent": "leftTire1_Contour1_9",
+          "pivot": [
+            12.25,
+            -0.19975,
+            37.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_11",
+          "parent": "leftTire1_Contour1_10",
+          "pivot": [
+            12.25,
+            -0.19975,
+            43.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_12",
+          "parent": "leftTire1_Contour1_11",
+          "pivot": [
+            12.25,
+            -0.19975,
+            49.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_13",
+          "parent": "leftTire1_Contour1_12",
+          "pivot": [
+            12.25,
+            -0.19975,
+            55.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_14",
+          "parent": "leftTire1_Contour1_13",
+          "pivot": [
+            12.25,
+            -0.19975,
+            61.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_15",
+          "parent": "leftTire1_Contour1_14",
+          "pivot": [
+            12.25,
+            -0.19975,
+            67.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_Contour1_16",
+          "parent": "leftTire1_Contour1_15",
+          "pivot": [
+            12.25,
+            -0.19975,
+            73.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_4",
+          "parent": "leftTire2",
+          "pivot": [
+            15,
+            2.33947,
+            36.5
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_9",
+          "parent": "leftTire1_inside1_4",
+          "pivot": [
+            12,
+            1.08947,
+            38.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_10",
+          "parent": "leftTire1_inside1_9",
+          "pivot": [
+            12,
+            1.08947,
+            44.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTirel1_inside1_2",
+          "parent": "leftTire1_inside1_10",
+          "pivot": [
+            12,
+            1.08947,
+            50.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_11",
+          "parent": "leftTirel1_inside1_2",
+          "pivot": [
+            12,
+            1.08947,
+            56.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_12",
+          "parent": "leftTire1_inside1_11",
+          "pivot": [
+            12,
+            1.08947,
+            62.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_13",
+          "parent": "leftTire1_inside1_12",
+          "pivot": [
+            12,
+            1.08947,
+            68.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftTire1_inside1_14",
+          "parent": "leftTire1_inside1_13",
+          "pivot": [
+            12,
+            1.08947,
+            74.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone11",
+          "parent": "leftTire2",
+          "pivot": [
+            18.1875,
+            8.25,
+            35
+          ]
+        },
+        {
+          "name": "bone12",
+          "parent": "leftTire2",
+          "pivot": [
+            18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            -72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone13",
+          "parent": "leftTire2",
+          "pivot": [
+            18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone14",
+          "parent": "leftTire2",
+          "pivot": [
+            18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone15",
+          "parent": "leftTire2",
+          "pivot": [
+            18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            -144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire2",
+          "parent": "tire",
+          "pivot": [
+            -17.48438,
+            8.22997,
+            35.0125
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_9",
+          "parent": "rightTire2",
+          "pivot": [
+            -15.25,
+            0.80025,
+            36
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_10",
+          "parent": "rightTire1_Contour1_9",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            37.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_11",
+          "parent": "rightTire1_Contour1_10",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            43.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_12",
+          "parent": "rightTire1_Contour1_11",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            49.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_13",
+          "parent": "rightTire1_Contour1_12",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            55.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_14",
+          "parent": "rightTire1_Contour1_13",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            61.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_15",
+          "parent": "rightTire1_Contour1_14",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            67.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_16",
+          "parent": "rightTire1_Contour1_15",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            73.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_4",
+          "parent": "rightTire2",
+          "pivot": [
+            -15,
+            2.33947,
+            36.5
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_9",
+          "parent": "rightTire1_inside1_4",
+          "pivot": [
+            -12,
+            1.08947,
+            38.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_10",
+          "parent": "rightTire1_inside1_9",
+          "pivot": [
+            -12,
+            1.08947,
+            44.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTirel1_inside1_2",
+          "parent": "rightTire1_inside1_10",
+          "pivot": [
+            -12,
+            1.08947,
+            50.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_11",
+          "parent": "rightTirel1_inside1_2",
+          "pivot": [
+            -12,
+            1.08947,
+            56.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_12",
+          "parent": "rightTire1_inside1_11",
+          "pivot": [
+            -12,
+            1.08947,
+            62.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_13",
+          "parent": "rightTire1_inside1_12",
+          "pivot": [
+            -12,
+            1.08947,
+            68.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_14",
+          "parent": "rightTire1_inside1_13",
+          "pivot": [
+            -12,
+            1.08947,
+            74.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone16",
+          "parent": "rightTire2",
+          "pivot": [
+            -18.1875,
+            8.25,
+            35
+          ]
+        },
+        {
+          "name": "bone17",
+          "parent": "rightTire2",
+          "pivot": [
+            -18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            -72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone18",
+          "parent": "rightTire2",
+          "pivot": [
+            -18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone19",
+          "parent": "rightTire2",
+          "pivot": [
+            -18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone20",
+          "parent": "rightTire2",
+          "pivot": [
+            -18.1875,
+            8.25,
+            35
+          ],
+          "rotation": [
+            -144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1",
+          "parent": "tire",
+          "pivot": [
+            -17.48438,
+            8.22997,
+            -32.9875
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_1",
+          "parent": "rightTire1",
+          "pivot": [
+            -15.25,
+            0.80025,
+            -32
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_2",
+          "parent": "rightTire1_Contour1_1",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            -30.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_3",
+          "parent": "rightTire1_Contour1_2",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            -24.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_4",
+          "parent": "rightTire1_Contour1_3",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            -18.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_5",
+          "parent": "rightTire1_Contour1_4",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            -12.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_6",
+          "parent": "rightTire1_Contour1_5",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            -6.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_7",
+          "parent": "rightTire1_Contour1_6",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            -0.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_Contour1_8",
+          "parent": "rightTire1_Contour1_7",
+          "pivot": [
+            -12.25,
+            -0.19975,
+            5.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_1",
+          "parent": "rightTire1",
+          "pivot": [
+            -15,
+            2.33947,
+            -31.5
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_2",
+          "parent": "rightTire1_inside1_1",
+          "pivot": [
+            -12,
+            1.08947,
+            -29.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_3",
+          "parent": "rightTire1_inside1_2",
+          "pivot": [
+            -12,
+            1.08947,
+            -23.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTirel1_inside1_4",
+          "parent": "rightTire1_inside1_3",
+          "pivot": [
+            -12,
+            1.08947,
+            -17.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_5",
+          "parent": "rightTirel1_inside1_4",
+          "pivot": [
+            -12,
+            1.08947,
+            -11.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_6",
+          "parent": "rightTire1_inside1_5",
+          "pivot": [
+            -12,
+            1.08947,
+            -5.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_7",
+          "parent": "rightTire1_inside1_6",
+          "pivot": [
+            -12,
+            1.08947,
+            0.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rightTire1_inside1_8",
+          "parent": "rightTire1_inside1_7",
+          "pivot": [
+            -12,
+            1.08947,
+            6.5
+          ],
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone6",
+          "parent": "rightTire1",
+          "pivot": [
+            -18.1875,
+            8.25,
+            -33
+          ]
+        },
+        {
+          "name": "bone7",
+          "parent": "rightTire1",
+          "pivot": [
+            -18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            -72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone8",
+          "parent": "rightTire1",
+          "pivot": [
+            -18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            72,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone9",
+          "parent": "rightTire1",
+          "pivot": [
+            -18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone10",
+          "parent": "rightTire1",
+          "pivot": [
+            -18.1875,
+            8.25,
+            -33
+          ],
+          "rotation": [
+            -144,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "brake",
+          "parent": "all",
+          "pivot": [
+            14,
+            9.75,
+            -18.25
+          ],
+          "rotation": [
+            27.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "accelerator",
+          "parent": "all",
+          "pivot": [
+            9,
+            9.75,
+            -18.25
+          ],
+          "rotation": [
+            27.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "glass",
+          "parent": "all",
+          "pivot": [
+            25.65428,
+            25.05736,
+            -22.66526
+          ]
+        },
+        {
+          "name": "oilDoor",
+          "parent": "all",
+          "pivot": [
+            -21,
+            22.82077,
+            42.99123
+          ],
+          "locators": {
+            "oil": [
+              -21.5,
+              20.25,
+              44
+            ]
+          }
+        },
+        {
+          "name": "chechuang",
+          "parent": "all",
+          "pivot": [
+            20,
+            38.25736,
+            -23
+          ]
+        },
+        {
+          "name": "bone21",
+          "parent": "chechuang",
+          "pivot": [
+            20,
+            27.75736,
+            -24.5
+          ],
+          "rotation": [
+            -55,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "top",
+          "parent": "all",
+          "pivot": [
+            0,
+            38.89335,
+            18.41769
+          ]
+        },
+        {
+          "name": "carPart1",
+          "parent": "all",
+          "pivot": [
+            18.96875,
+            24,
+            35.5
+          ]
+        },
+        {
+          "name": "carPart3",
+          "parent": "all",
+          "pivot": [
+            -18.96875,
+            24,
+            35.5
+          ]
+        },
+        {
+          "name": "carPart2",
+          "parent": "all",
+          "pivot": [
+            -17.96875,
+            24,
+            -32.5
+          ]
+        },
+        {
+          "name": "carPart4",
+          "parent": "all",
+          "pivot": [
+            17.96875,
+            24,
+            -32.5
+          ]
+        },
+        {
+          "name": "carHead",
+          "parent": "all",
+          "pivot": [
+            0,
+            27.75736,
+            -25.5
+          ],
+          "rotation": [
+            5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bone23",
+          "parent": "carHead",
+          "pivot": [
+            -21.05,
+            18.96497,
+            -21.67431
+          ],
+          "rotation": [
+            0,
+            -2,
+            0
+          ]
+        },
+        {
+          "name": "bone24",
+          "parent": "carHead",
+          "pivot": [
+            21.05,
+            18.96497,
+            -21.67431
+          ],
+          "rotation": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "name": "carHea1_2",
+          "parent": "carHead",
+          "pivot": [
+            0,
+            27.75736,
+            -39.5
+          ],
+          "rotation": [
+            7.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "carHea1_3",
+          "parent": "carHea1_2",
+          "pivot": [
+            0,
+            27.75736,
+            -48.5
+          ],
+          "rotation": [
+            67.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "carHea1_4",
+          "parent": "carHea1_3",
+          "pivot": [
+            0,
+            27.75736,
+            -59.5
+          ],
+          "rotation": [
+            10,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "leftDoor2",
+          "parent": "all",
+          "pivot": [
+            21.5,
+            15.25736,
+            4.5
+          ]
+        },
+        {
+          "name": "rightDoor2",
+          "parent": "all",
+          "pivot": [
+            -21.5,
+            15.25736,
+            4.5
+          ]
+        },
+        {
+          "name": "leftDoor",
+          "parent": "all",
+          "pivot": [
+            21.5,
+            14.86766,
+            -19.48279
+          ]
+        },
+        {
+          "name": "rightDoor",
+          "parent": "all",
+          "pivot": [
+            -21.5,
+            14.86766,
+            -19.48279
+          ]
+        },
+        {
+          "name": "chair3",
+          "parent": "all",
+          "pivot": [
+            0.5,
+            11.75736,
+            23.5
+          ]
+        },
+        {
+          "name": "wheel",
+          "parent": "all",
+          "pivot": [
+            10,
+            20.75,
+            -12.75
+          ],
+          "rotation": [
+            17.5,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wheelMain",
+          "parent": "wheel",
+          "pivot": [
+            10,
+            20.75,
+            -12.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8.5,
+                19.25,
+                -13.25
+              ],
+              "size": [
+                3,
+                3,
+                1
+              ],
+              "inflate": 0.02,
+              "uv": [
+                296,
+                320
+              ]
+            },
+            {
+              "origin": [
+                8.5,
+                23.37132,
+                -13.25
+              ],
+              "size": [
+                3,
+                1,
+                1
+              ],
+              "inflate": 0.02,
+              "uv": [
+                90,
+                220
+              ]
+            },
+            {
+              "origin": [
+                9.5,
+                22.25,
+                -13.25
+              ],
+              "size": [
+                1,
+                2,
+                1
+              ],
+              "inflate": -0.02,
+              "uv": [
+                284,
+                41
+              ]
+            },
+            {
+              "origin": [
+                9.5,
+                21.25,
+                -13.25
+              ],
+              "size": [
+                1,
+                3,
+                1
+              ],
+              "inflate": -0.02,
+              "pivot": [
+                10,
+                20.75,
+                -12.75
+              ],
+              "rotation": [
+                0,
+                0,
+                -120
+              ],
+              "uv": [
+                268,
+                213
+              ]
+            },
+            {
+              "origin": [
+                9.5,
+                21.25,
+                -13.25
+              ],
+              "size": [
+                1,
+                3,
+                1
+              ],
+              "inflate": -0.02,
+              "pivot": [
+                10,
+                20.75,
+                -12.75
+              ],
+              "rotation": [
+                0,
+                0,
+                120
+              ],
+              "uv": [
+                268,
+                217
+              ]
+            },
+            {
+              "origin": [
+                9,
+                19.75,
+                -13.75
+              ],
+              "size": [
+                2,
+                2,
+                2
+              ],
+              "uv": [
+                322,
+                128
+              ]
+            },
+            {
+              "origin": [
+                9.5,
+                20.25,
+                -16.75
+              ],
+              "size": [
+                1,
+                1,
+                3
+              ],
+              "uv": [
+                322,
+                132
+              ]
+            },
+            {
+              "origin": [
+                8.5,
+                17.12868,
+                -13.25
+              ],
+              "size": [
+                3,
+                1,
+                1
+              ],
+              "inflate": 0.02,
+              "uv": [
+                224,
+                177
+              ]
+            },
+            {
+              "origin": [
+                5.5,
+                23.37132,
+                -13.25
+              ],
+              "size": [
+                3,
+                1,
+                1
+              ],
+              "pivot": [
+                8.5,
+                24.37132,
+                -12.75
+              ],
+              "rotation": [
+                0,
+                0,
+                -45
+              ],
+              "uv": [
+                232,
+                177
+              ]
+            },
+            {
+              "origin": [
+                6.37868,
+                19.25,
+                -13.25
+              ],
+              "size": [
+                1,
+                3,
+                1
+              ],
+              "inflate": 0.02,
+              "uv": [
+                176,
+                279
+              ]
+            },
+            {
+              "origin": [
+                11.5,
+                23.37132,
+                -13.25
+              ],
+              "size": [
+                3,
+                1,
+                1
+              ],
+              "pivot": [
+                11.5,
+                24.37132,
+                -12.75
+              ],
+              "rotation": [
+                0,
+                0,
+                45
+              ],
+              "uv": [
+                44,
+                245
+              ]
+            },
+            {
+              "origin": [
+                12.62132,
+                19.25,
+                -13.25
+              ],
+              "size": [
+                1,
+                3,
+                1
+              ],
+              "inflate": 0.02,
+              "uv": [
+                176,
+                283
+              ]
+            },
+            {
+              "origin": [
+                11.5,
+                17.12868,
+                -13.25
+              ],
+              "size": [
+                3,
+                1,
+                1
+              ],
+              "pivot": [
+                11.5,
+                17.12868,
+                -12.75
+              ],
+              "rotation": [
+                0,
+                0,
+                -45
+              ],
+              "uv": [
+                52,
+                245
+              ]
+            },
+            {
+              "origin": [
+                5.5,
+                17.12868,
+                -13.25
+              ],
+              "size": [
+                3,
+                1,
+                1
+              ],
+              "pivot": [
+                8.5,
+                17.12868,
+                -12.75
+              ],
+              "rotation": [
+                0,
+                0,
+                45
+              ],
+              "uv": [
+                240,
+                177
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chair1",
+          "parent": "all",
+          "pivot": [
+            11,
+            14.26597,
+            -2.23213
+          ]
+        },
+        {
+          "name": "chair2",
+          "parent": "all",
+          "pivot": [
+            -11,
+            14.26597,
+            -2.23213
+          ]
+        },
+        {
+          "name": "interaction_wheel_front_left",
+          "pivot": [
+            17.48438,
+            8.22997,
+            -32.9875
+          ]
+        },
+        {
+          "name": "interaction_wheel_front_right",
+          "pivot": [
+            -17.48438,
+            8.22997,
+            -32.9875
+          ]
+        },
+        {
+          "name": "interaction_wheel_rear_left",
+          "pivot": [
+            17.48438,
+            8.22997,
+            35.0125
+          ]
+        },
+        {
+          "name": "interaction_wheel_rear_right",
+          "pivot": [
+            -17.48438,
+            8.22997,
+            35.0125
+          ]
+        }
+      ]
+    }
+  ]
+}

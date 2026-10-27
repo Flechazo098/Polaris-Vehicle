@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "polaris_vehicle:item/super_racing_engine_type_v"
+  }
+}

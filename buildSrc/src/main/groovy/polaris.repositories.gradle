@@ -1,0 +1,65 @@
+repositories {
+    def localDependencies = mavenLocal {
+        // OELib must use the published remote artifact, not thin local development jars.
+        content { excludeGroupByRegex('cc\\.sighs\\.oelib(\\..*)?') }
+    }
+    mavenCentral()
+    // KGP resolves build-tools-compat while Gradle serializes the task graph.
+    // MDG's repository is otherwise queried first (including cached HEAD checks)
+    // for Kotlin artifacts, causing launch to wait on an unrelated Maven host.
+    exclusiveContent {
+        forRepositories(
+                maven { name = 'Kotlin Local'; url = localDependencies.url },
+                maven { name = 'Kotlin Central'; url = 'https://repo.maven.apache.org/maven2/' }
+        )
+        filter {
+            includeGroup('org.jetbrains.kotlin')
+            includeGroup('org.jetbrains.kotlinx')
+        }
+    }
+    maven {
+        url "https://maven.sighs.cc/repository/maven-releases/"
+        content {
+            includeGroupByRegex('cc\\.sighs(\\..*)?')
+            includeGroup('com.flechazo')
+        }
+        mavenContent { releasesOnly() }
+    }
+    maven {
+        url "https://maven.sighs.cc/repository/maven-snapshots/"
+        content {
+            includeGroupByRegex('cc\\.sighs(\\..*)?')
+            includeGroup('com.flechazo')
+        }
+        mavenContent { snapshotsOnly() }
+    }
+    maven {
+        name = "Curse Maven"
+        url = uri("https://www.cursemaven.com")
+        content {
+            includeGroup("curse.maven")
+        }
+    }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+    maven {
+        name = 'Kotlin for Forge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+        content { includeGroup('thedarkcolour') }
+    }
+    ivy {
+        name = 'Local Spark Core'
+        url = rootProject.layout.projectDirectory.dir('libs')
+        patternLayout {
+            artifact '[artifact]-[revision].[ext]'
+        }
+        metadataSources {
+            artifact()
+        }
+    }
+}

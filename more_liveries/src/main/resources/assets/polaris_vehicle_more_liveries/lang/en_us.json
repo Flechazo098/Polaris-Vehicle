@@ -1,0 +1,20 @@
+{
+  "itemGroup.polaris_vehicle_more_liveries.skin_paints": "Polaris Vehicle More Liveries",
+  "tooltip.polaris_vehicle_more_liveries.skin_paint": "Sprays each vehicle's skin in this colour",
+  "tooltip.polaris_vehicle_more_liveries.skin_paint.vehicles": "Vehicles:",
+  "item.polaris_vehicle_more_liveries.white_skin_vehicle_paint": "White Skin Paint",
+  "item.polaris_vehicle_more_liveries.black_skin_vehicle_paint": "Black Skin Paint",
+  "item.polaris_vehicle_more_liveries.blue_skin_vehicle_paint": "Blue Skin Paint",
+  "item.polaris_vehicle_more_liveries.pink_skin_vehicle_paint": "Pink Skin Paint",
+  "item.polaris_vehicle_more_liveries.green_skin_vehicle_paint": "Green Skin Paint",
+  "item.polaris_vehicle_more_liveries.red_skin_vehicle_paint": "Red Skin Paint",
+  "tooltip.polaris_vehicle_more_liveries.formula_car_fire": "Formula Car-§6Flame",
+  "tooltip.polaris_vehicle_more_liveries.rally_car_fire": "Rally Car-§6Flame",
+  "tooltip.polaris_vehicle_more_liveries.convertible_ice_cream": "Convertible-§6Ice Cream Cone",
+  "tooltip.polaris_vehicle_more_liveries.kart_python": "Kart-§6Python",
+  "tooltip.polaris_vehicle_more_liveries.suv_classic_cartoon": "SUV-§6Classic Cartoon",
+  "tooltip.polaris_vehicle_more_liveries.small_car_classic_cartoon": "Three-wheel Microcar-§6Classic Cartoon",
+  "tooltip.polaris_vehicle_more_liveries.elderly_car_classic_cartoon": "Single-seat Microcar-§6Classic Cartoon",
+  "tooltip.polaris_vehicle_more_liveries.two_seat_car_classic_cartoon": "Two-seat Microcar-§6Classic Cartoon",
+  "tooltip.polaris_vehicle_more_liveries.small_bus_cat_bus": "Small Bus-§6Cat Bus"
+}

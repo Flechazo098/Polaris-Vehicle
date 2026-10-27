@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "part",
+  "materials": [
+    { "item": "minecraft:slime_ball", "count": 3 },
+    { "item": "minecraft:coal", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:slime_rubber", "count": 1 }
+}

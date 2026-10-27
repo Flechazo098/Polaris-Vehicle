@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.model.idle": {
+      "loop": true,
+      "bones": {
+        "rightArm": {
+          "rotation": [-52.1076, 47.2734, -67.0181],
+          "position": [0, -17, -1]
+        },
+        "leftArm": {
+          "rotation": [2.5, 70, 0],
+          "position": [-4.7, -12, -13.3]
+        }
+      }
+    }
+  }
+}

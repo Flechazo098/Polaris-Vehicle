@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "polaris_vehicle:block/upper_concrete_line_ramp",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "polaris_vehicle:block/upper_concrete_line_ramp",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "polaris_vehicle:block/upper_concrete_line_ramp"
+    },
+    "facing=west": {
+      "model": "polaris_vehicle:block/upper_concrete_line_ramp",
+      "y": 90
+    }
+  }
+}

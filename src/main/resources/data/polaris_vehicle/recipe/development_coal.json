@@ -1,0 +1,14 @@
+{
+  "type": "polaris_vehicle:fuel_extraction",
+  "blaze_rod": {
+    "item": "minecraft:blaze_rod"
+  },
+  "blaze_rod_count": 1,
+  "coal": {
+    "tag": "minecraft:coals"
+  },
+  "coal_count": 1,
+  "fuel_type": "polaris_vehicle:standard_fuel",
+  "output_amount_ml": 1000,
+  "processing_ticks": 200
+}

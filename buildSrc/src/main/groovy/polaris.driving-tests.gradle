@@ -1,0 +1,26 @@
+// Real driving fixtures are available only in development runs.
+sourceSets.create('gameTest') {
+    compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+    runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+}
+
+neoForge {
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+            sourceSet(sourceSets.gameTest)
+        }
+    }
+    unitTest {
+        testedMod = mods["${mod_id}"]
+        enable()
+    }
+}
+
+tasks.named('test', Test) {
+    useJUnitPlatform()
+}
+
+// Packaging remains independent of the native/GameTest verification tasks.
+tasks.named('check') { setDependsOn([]) }
+tasks.named('build') { setDependsOn(['assemble', 'check']) }

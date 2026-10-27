@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "polaris_vehicle:block/concrete_road" }
+  }
+}

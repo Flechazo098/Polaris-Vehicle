@@ -1,0 +1,10 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "part",
+  "materials": [
+    { "item": "polaris_vehicle:alloy_ingot", "count": 24 },
+    { "item": "minecraft:redstone", "count": 64 },
+    { "item": "minecraft:netherite_scrap", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:large_engine", "count": 1 }
+}

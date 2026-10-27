@@ -1,0 +1,97 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.jack2.pose1": {
+      "loop": true,
+      "bones": {
+        "part1": {
+          "position": [
+            0,
+            -8,
+            0
+          ]
+        },
+        "part2": {
+          "position": [
+            0,
+            -3,
+            0
+          ]
+        },
+        "part3": {
+          "position": [
+            0,
+            -8,
+            0
+          ]
+        }
+      }
+    },
+    "animation.jack2.pose2": {
+      "loop": true
+    },
+    "animation.jack2.tran": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 0.2917,
+      "bones": {
+        "part1": {
+          "position": {
+            "0.0": [
+              0,
+              -8,
+              0
+            ],
+            "0.125": [
+              0,
+              -3,
+              0
+            ],
+            "0.2917": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "part2": {
+          "position": {
+            "0.0": [
+              0,
+              -3,
+              0
+            ],
+            "0.125": [
+              0,
+              -3,
+              0
+            ],
+            "0.2917": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "part3": {
+          "position": {
+            "0.0": [
+              0,
+              -8,
+              0
+            ],
+            "0.125": [
+              0,
+              -3,
+              0
+            ],
+            "0.2917": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

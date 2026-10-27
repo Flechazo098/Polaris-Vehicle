@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.humanoid.ju": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [0, 0, 0],
+          "position": [0, "-0.75+math.cos(q.anim_time*150)*0.3", 0],
+          "scale": 1
+        },
+        "head": {
+          "position": [0, "-1+math.cos(q.anim_time*150+20)*0.3", 0]
+        },
+        "rightArm": {
+          "rotation": [-180.1179, 1.0809, "-12.4539+math.cos(q.anim_time*150+20)*3"],
+          "position": [0, "math.cos(q.anim_time*150+20)*0.5", 0]
+        },
+        "leftArm": {
+          "rotation": [-180.1179, -1.0809, "12.4539-math.cos(q.anim_time*150+20)*3"],
+          "position": [0, "math.cos(q.anim_time*150+20)*0.5", 0]
+        }
+      }
+    }
+  }
+}
