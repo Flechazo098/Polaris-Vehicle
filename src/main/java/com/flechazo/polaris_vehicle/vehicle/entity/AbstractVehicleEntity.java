@@ -2,6 +2,7 @@ package com.flechazo.polaris_vehicle.vehicle.entity;
 
 import com.flechazo.hkt.Maybe;
 import com.flechazo.hkt.business.core.Pathway;
+import com.flechazo.polaris_vehicle.license.DrivingLicenseService;
 import com.flechazo.polaris_vehicle.PolarisVehicle;
 import com.flechazo.polaris_vehicle.client.model.VehicleTireSteeringLimits;
 import com.flechazo.polaris_vehicle.config.VehicleGameplayConfig;
@@ -1886,7 +1887,7 @@ public abstract class AbstractVehicleEntity extends Entity implements GeoEntity 
                     "message.polaris_vehicle.paint.invalid_state"), true);
             return true;
         }
-        ResourceLocation paintId = paintItem.paint().id();
+        ResourceLocation paintId = paintItem.paintId();
         if (paintId.equals(vehicleData.paintId())) {
             player.displayClientMessage(Component.translatable(
                     "message.polaris_vehicle.paint.already_applied"), true);
@@ -3481,6 +3482,12 @@ public abstract class AbstractVehicleEntity extends Entity implements GeoEntity 
             return;
         }
         if (!authorizeLockedVehicleOperation(driver)) {
+            return;
+        }
+        // Only starting needs the licence; a running engine stays drivable.
+        var licenseRefusal = DrivingLicenseService.startRefusal(driver, vehicleTypeId());
+        if (licenseRefusal.isPresent()) {
+            driver.displayClientMessage(licenseRefusal.get(), true);
             return;
         }
         if (vehicleData.fuel() <= 0) {

@@ -2,6 +2,6 @@
   "parent": "minecraft:item/generated",
   "gui_light": "front",
   "textures": {
-    "layer0": "polaris_vehicle_more_liveries:item/black_skin_vehicle_paint"
+    "layer0": "polaris_vehicle_more_liveries:item/black_skin_vehicle_paint_2d"
   }
 }

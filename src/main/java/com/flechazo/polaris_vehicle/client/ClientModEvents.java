@@ -17,6 +17,7 @@ import com.flechazo.polaris_vehicle.client.screen.VehicleManufacturingScreen;
 import com.flechazo.polaris_vehicle.client.sound.VehicleEnginePcmBank;
 import com.flechazo.polaris_vehicle.client.sound.VehicleHornPcmBank;
 import com.flechazo.polaris_vehicle.content.block.RampBlock;
+import com.flechazo.polaris_vehicle.item.VehiclePaintItem;
 import com.flechazo.polaris_vehicle.registry.ModBlocks;
 import com.flechazo.polaris_vehicle.registry.ModEntityTypes;
 import com.flechazo.polaris_vehicle.registry.ModMenus;
@@ -44,13 +45,11 @@ import java.util.stream.Stream;
 public final class ClientModEvents {
     private static final List<String> HELD_3D_ITEM_MODELS = List.of(
             "assembly_table", "fuel_extractor", "vehicle_manufacturing_table",
-            "black_vehicle_paint", "blue_vehicle_paint", "pink_vehicle_paint",
-            "green_vehicle_paint", "red_vehicle_paint", "white_vehicle_paint", "bread_vehicle_paint",
             "electric_wrench", "wrench", "hammer", "vehicle_key"
     );
 
     private static final List<String> FLAT_ITEM_MODELS = List.of(
-            "portable_jack",
+            "portable_jack", "driving_license",
             "all_terrain_tire", "racing_balanced_tire", "racing_endurance_tire", "racing_speed_tire",
             "road_tire", "run_flat_tire",
             "drive_motor", "small_engine", "medium_engine", "large_engine",
@@ -97,6 +96,12 @@ public final class ClientModEvents {
                     )
             ));
         }
+        for (var item : BuiltInRegistries.ITEM) {
+            if (item instanceof VehiclePaintItem) {
+                var id = BuiltInRegistries.ITEM.getKey(item);
+                event.register(ModelResourceLocation.standalone(id.withPath("item/" + id.getPath() + "_2d")));
+            }
+        }
     }
 
     @SubscribeEvent
@@ -115,6 +120,16 @@ public final class ClientModEvents {
                 models.put(inventoryId, FLAT_ITEM_MODELS.contains(item)
                         ? new PreviewOnlyGeoItemModel(inventoryModel, spriteModel)
                         : new GroundSpriteItemModel(inventoryModel, spriteModel));
+            }
+        }
+        for (var item : BuiltInRegistries.ITEM) {
+            if (!(item instanceof VehiclePaintItem)) continue;
+            var id = BuiltInRegistries.ITEM.getKey(item);
+            var inventoryId = ModelResourceLocation.inventory(id);
+            var geometry = models.get(inventoryId);
+            var sprite = models.get(ModelResourceLocation.standalone(id.withPath("item/" + id.getPath() + "_2d")));
+            if (geometry != null && geometry.isCustomRenderer() && sprite != null && sprite != missingModel) {
+                models.put(inventoryId, new GroundSpriteItemModel(geometry, sprite));
             }
         }
     }

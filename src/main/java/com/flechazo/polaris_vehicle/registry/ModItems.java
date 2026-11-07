@@ -10,8 +10,6 @@ import com.flechazo.polaris_vehicle.power.VehiclePowerDefinition;
 import com.flechazo.polaris_vehicle.power.VehiclePowerDefinitions;
 import com.flechazo.polaris_vehicle.vehicle.data.VehicleDefinition;
 import com.flechazo.polaris_vehicle.vehicle.data.VehicleDefinitions;
-import com.flechazo.polaris_vehicle.vehicle.data.VehiclePaintDefinition;
-import com.flechazo.polaris_vehicle.vehicle.data.VehiclePaintDefinitions;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -126,13 +124,6 @@ public final class ModItems {
         ));
     }
 
-    private static DeferredItem<VehiclePaintItem> paint(VehiclePaintDefinition definition) {
-        return ITEMS.register(definition.id().getPath() + "_vehicle_paint", () -> new VehiclePaintItem(
-                new Item.Properties().stacksTo(16),
-                definition
-        ));
-    }
-
     public static final DeferredItem<VehicleTireItem> ROAD_TIRE = tire(VehicleTireDefinitions.ROAD);
     public static final DeferredItem<VehicleTireItem> ALL_TERRAIN_TIRE = tire(VehicleTireDefinitions.ALL_TERRAIN);
     public static final DeferredItem<VehicleTireItem> RUN_FLAT_TIRE = tire(VehicleTireDefinitions.RUN_FLAT);
@@ -165,13 +156,20 @@ public final class ModItems {
             powerUnit(VehiclePowerDefinitions.RECOVERY_A);
     public static final DeferredItem<VehiclePowerUnitItem> ENERGY_RECOVERY_UNIT_B =
             powerUnit(VehiclePowerDefinitions.RECOVERY_B);
-    public static final DeferredItem<VehiclePaintItem> WHITE_VEHICLE_PAINT = paint(VehiclePaintDefinitions.WHITE);
-    public static final DeferredItem<VehiclePaintItem> BLACK_VEHICLE_PAINT = paint(VehiclePaintDefinitions.BLACK);
-    public static final DeferredItem<VehiclePaintItem> BLUE_VEHICLE_PAINT = paint(VehiclePaintDefinitions.BLUE);
-    public static final DeferredItem<VehiclePaintItem> PINK_VEHICLE_PAINT = paint(VehiclePaintDefinitions.PINK);
-    public static final DeferredItem<VehiclePaintItem> GREEN_VEHICLE_PAINT = paint(VehiclePaintDefinitions.GREEN);
-    public static final DeferredItem<VehiclePaintItem> RED_VEHICLE_PAINT = paint(VehiclePaintDefinitions.RED);
-    public static final DeferredItem<VehiclePaintItem> BREAD_VEHICLE_PAINT = paint(VehiclePaintDefinitions.BREAD);
+    public static final DeferredItem<VehiclePaintItem> WHITE_VEHICLE_PAINT = ITEMS.register("white_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<VehiclePaintItem> BLACK_VEHICLE_PAINT = ITEMS.register("black_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<VehiclePaintItem> BLUE_VEHICLE_PAINT = ITEMS.register("blue_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<VehiclePaintItem> PINK_VEHICLE_PAINT = ITEMS.register("pink_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<VehiclePaintItem> GREEN_VEHICLE_PAINT = ITEMS.register("green_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<VehiclePaintItem> RED_VEHICLE_PAINT = ITEMS.register("red_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<VehiclePaintItem> BREAD_VEHICLE_PAINT = ITEMS.register("bread_vehicle_paint", () ->
+            new VehiclePaintItem(new Item.Properties().stacksTo(16)));
     public static final DeferredItem<VehicleItem> KART_VEHICLE = vehicle(VehicleDefinitions.KART);
     public static final DeferredItem<VehicleItem> ELDERLY_CAR_VEHICLE = vehicle(VehicleDefinitions.ELDERLY_CAR);
     public static final DeferredItem<VehicleItem> SMALL_BUS_VEHICLE = vehicle(VehicleDefinitions.SMALL_BUS);
@@ -213,6 +211,8 @@ public final class ModItems {
             "portable_jack", () -> new VehicleJackItem(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<VehicleKeyItem> VEHICLE_KEY = ITEMS.register(
             "vehicle_key", () -> new VehicleKeyItem(new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<DrivingLicenseItem> DRIVING_LICENSE = ITEMS.register(
+            "driving_license", () -> new DrivingLicenseItem(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<CrewDollItem> CREW_DOLL_FLECHAZO = ITEMS.register(
             "crew_doll_flechazo",
             () -> new CrewDollItem(new Item.Properties().stacksTo(1), CrewDollVariant.FLECHAZO)

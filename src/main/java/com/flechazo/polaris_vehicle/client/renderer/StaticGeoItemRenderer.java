@@ -31,7 +31,7 @@ public class StaticGeoItemRenderer<T extends Item & GeoAnimatable & StaticGeoAss
     public StaticGeoItemRenderer() {
         this(new StaticGeoItemModel<>());
     }
-    protected StaticGeoItemRenderer(GeoModel<T> model) {
+    public StaticGeoItemRenderer(GeoModel<T> model) {
         super(model);
         useAlternateGuiLighting();
     }

@@ -1,0 +1,9 @@
+{
+  "type": "polaris_vehicle:vehicle_manufacturing",
+  "category": "tool",
+  "materials": [
+    { "item": "minecraft:paper", "count": 1 },
+    { "item": "minecraft:diamond", "count": 1 }
+  ],
+  "result": { "id": "polaris_vehicle:driving_license", "count": 1 }
+}

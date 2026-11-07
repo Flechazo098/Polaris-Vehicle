@@ -1,5 +1,4 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.3.0'
     id 'net.neoforged.moddev' version '2.0.143'
     id 'org.openrewrite.rewrite' version '7.39.0'
     id 'polaris.mod-conventions'
@@ -8,6 +7,7 @@ plugins {
     id 'polaris.client-compat'
     id 'polaris.client-runtime'
     id 'polaris.driving-tests'
+    id 'polaris.lint'
 }
 
 configurations.named('jarJar') { transitive = false }
@@ -15,15 +15,10 @@ configurations.named('jarJar') { transitive = false }
 dependencies {
     [
             "cc.sighs.oelib:oelib-neoforge-${minecraft_version}:${oelib_version}",
-            "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}",
-            "thedarkcolour:kotlinforforge-neoforge:${kotlinforforge_version}",
-            "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${coroutines_version}"
+            "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
     ].each { library ->
         implementation library
         jarJar library
-    }
-    ['kfflang', 'kfflib', 'kffmod'].each { module ->
-        jarJar "thedarkcolour:${module}-neoforge:${kotlinforforge_version}"
     }
 
     implementation "curse.maven:spark-361579:${spark_file}"

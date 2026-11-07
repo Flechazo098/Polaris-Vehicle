@@ -13,11 +13,6 @@
       "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/api/SparkLevel.java"
     },
     {
-      "source": "cn/solarmoon/spark_core/api/SparkLevelKt.kt",
-      "sha256": "a5bc7bbc28180b5e3395c155f955ea9373ff897810cd1277b7400d4ab2e55f37",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/api/SparkLevelKt.kt"
-    },
-    {
       "source": "cn/solarmoon/spark_core/mixin_interface/ILevelMixin.java",
       "sha256": "166ccac6cea10d116b604b949bf9a5f3a2fd1c1042ea28152dee8d85fbd85afa",
       "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/mixin_interface/ILevelMixin.java"
@@ -35,137 +30,137 @@
     {
       "source": "cn/solarmoon/spark_core/physics/PhysicsHost.kt",
       "sha256": "fcecba293db34c3cf0d2b1ea4e6eb32389cf42317f4a5ba353332d52c05d9e07",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/PhysicsHost.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/PhysicsHost.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/PenetrationKey.kt",
       "sha256": "5aba7cb2c47ce9ab1f74b15acaac06cb5ea2b04ed955057ab8d9966c30fffad0",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/PenetrationKey.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/PenetrationKey.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/PhysicsHelper.kt",
       "sha256": "1fded5012cc88fb0282172173584eeec524562b0534a029102403a2570ae14f8",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/PhysicsHelper.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/PhysicsHelper.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/body/CollisionGroups.kt",
       "sha256": "de4d36bfcf4b5de7a824fec1b916311146b794d0a9bcba55ef95f5a8be3c42f6",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/CollisionGroups.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/body/CollisionGroups.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/body/ManifoldPoint.kt",
       "sha256": "9b3911ab21237fe08859247885fe956b93f459199ac35a9f287b4352e86bc99c",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/ManifoldPoint.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/body/ManifoldPoint.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/body/PhysicsBodyEvent.kt",
       "sha256": "fcdbb5d26990e2679b63a5d5b6aa40ccae70e2d4fee8b3ea2dd07f167d926285",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyEvent.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyEvent.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/body/PhysicsBodyExtension.kt",
       "sha256": "3042eaa638cc13f819bbcd2eae188f28176e0d1ad1ae77dba16c75deda2455bc",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyExtension.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyExtension.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/body/PhysicsBodyState.kt",
       "sha256": "61803248899309f6c64515ecf7e2b55b21208f0a3993087800382c89967685f3",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyState.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/body/PhysicsBodyState.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/level/PhysicsLevel.kt",
       "sha256": "23c6492ccb6ec5032e4352ed69bb1cdc235fd6458f47a04af0c900a9658a0ec6",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevel.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevel.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/level/PhysicsLevelApplier.kt",
       "sha256": "38e70cf9e14e7ab793d288f1b82d59d4d68e5990b6770cc5e6b0d1497e021339",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevelApplier.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevelApplier.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/level/PhysicsLevelState.kt",
       "sha256": "e0f0c2c80f47d10c69220f75e0b5d039bd2a8ee89195bce1e823bad532a593ee",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevelState.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsLevelState.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/level/PhysicsWorld.kt",
       "sha256": "40a98b2dbecda3c7649218c37f75f53e82a0843466b81b35501ad1ae92896979",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsWorld.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/level/PhysicsWorld.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/level/ServerPhysicsLevel.kt",
       "sha256": "dc2fc730d141ac92b5c7249fe2ea5377e115d31b01b17fefe5e4a2f04afeef21",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/level/ServerPhysicsLevel.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/level/ServerPhysicsLevel.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/BlockMerger.kt",
       "sha256": "ee35ca2fe78edacd00d657d1e12dc1ab3a78168653f20bf5cadbec5908955710",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockMerger.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockMerger.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/BlockPhysicsData.kt",
       "sha256": "c2487a5a17073e70073cf0a2b673d8d848ffc0a22e5912696235dad09f9f1379",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockPhysicsData.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockPhysicsData.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/BlockPhysicsDataMaps.kt",
       "sha256": "928433fda83661d110c0a4518716aed5b0633f85f8a4ec612e9056250357b852",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockPhysicsDataMaps.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockPhysicsDataMaps.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/BlockShapeManager.kt",
       "sha256": "17650258ce9980f747437dc4c728e5da12d5394b9bb49f0c485674928fa5bf6e",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockShapeManager.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/BlockShapeManager.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/ChunkHeightIndex.kt",
       "sha256": "12351aeafc688cf98473ec566a2d40081ee797dfea10a2374a663c95c6d46c56",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/ChunkHeightIndex.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/ChunkHeightIndex.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/PhysicsChunk.kt",
       "sha256": "265e67bb4e5e060955b37ebb14592675273a50a1e0b6fe3a9a0e1f42a8384164",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunk.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunk.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/PhysicsChunkManager.kt",
       "sha256": "70d3ee1f2160fc2996aac25ef190897fad041d2e9f6fcef0fae87999acd25523",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunkManager.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunkManager.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/PhysicsChunkSection.kt",
       "sha256": "4438b2adac8922f8ba83ee8f48c2e6d410120c80485b8474dd84f870b6ee46b1",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunkSection.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/PhysicsChunkSection.java"
     },
     {
       "source": "cn/solarmoon/spark_core/physics/terrain/SectionSnapshot.kt",
       "sha256": "8dbf8c805b3babed9cb112af9e7ddfe9a6fe0abb91e8fdd8c727e18ca96cac7d",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/SectionSnapshot.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/physics/terrain/SectionSnapshot.java"
     },
     {
       "source": "cn/solarmoon/spark_core/util/PPhase.kt",
       "sha256": "a400b10f35ba09e5e3d0859469460abe4753c9cc7a4b64e11849957470366b7c",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/PPhase.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/util/PPhase.java"
     },
     {
       "source": "cn/solarmoon/spark_core/util/TaskSubmitOffice.kt",
       "sha256": "e0109bd464aa7a9f098c4821e0758cfcab146d0e219664541ce82f77ee3a1860",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/TaskSubmitOffice.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/util/TaskSubmitOffice.java"
     },
     {
       "source": "cn/solarmoon/spark_core/util/DelayedTask.kt",
       "sha256": "2b2e32686f40e38d22035bae88f53ca3261ea68f0ec565b2145dc256676a1dfb",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/DelayedTask.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/util/DelayedTask.java"
     },
     {
       "source": "cn/solarmoon/spark_core/util/InlineEventHandler.kt",
       "sha256": "d0d4f7fb76f9767f7c7297428810f42ef2aeeababbd0b319923df4088119442d",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/InlineEventHandler.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/util/InlineEventHandler.java"
     },
     {
       "source": "cn/solarmoon/spark_core/util/SparkMath.kt",
       "sha256": "5df3e7543386059f3a52b1d888969bff4e4810dbb2c2b57e30cc5a52d0b3e3b9",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/util/SparkMath.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/util/SparkMath.java"
     },
     {
       "source": "cn/solarmoon/spark_core/util/BlockCollisionUtil.java",
@@ -175,32 +170,32 @@
     {
       "source": "cn/solarmoon/spark_core/pack/NativeLoader.kt",
       "sha256": "194c5fcfd567f952a4c10d015e536cfdf5d2cb5479b51d756afe43b26829855b",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/pack/NativeLoader.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/pack/NativeLoader.java"
     },
     {
       "source": "cn/solarmoon/spark_core/event/PhysicsLevelTickEvent.kt",
       "sha256": "8e11476a09db8cab34d587f57a6a1e4cb57ace0d8d2c2ce263dc3432159230cf",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsLevelTickEvent.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsLevelTickEvent.java"
     },
     {
       "source": "cn/solarmoon/spark_core/event/PhysicsLevelInitEvent.kt",
       "sha256": "efb437f44ee04dc34dcc5a44d25ef64304a31295fb587e4cb2ca8c32a2319ae8",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsLevelInitEvent.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsLevelInitEvent.java"
     },
     {
       "source": "cn/solarmoon/spark_core/event/PhysicsEntityTickEvent.kt",
       "sha256": "9d73fe6bd10c27c92193167177290c38d50338fc796344b81e295db1e34a7615",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsEntityTickEvent.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsEntityTickEvent.java"
     },
     {
       "source": "cn/solarmoon/spark_core/event/PhysicsContactEvent.kt",
       "sha256": "c7c5d2f6b168718d507027424de8cd42414d137e0f6a37d2c88b23ca544715c9",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsContactEvent.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/event/PhysicsContactEvent.java"
     },
     {
       "source": "cn/solarmoon/spark_core/event/NeedsCollisionEvent.kt",
       "sha256": "bae84323d3992c69f20604a4681e8e7a540d6ceb1bb2f9ebad7e458761d5a3da",
-      "output": "src/main/kotlin/com/flechazo/polaris_vehicle/sparkcore/event/NeedsCollisionEvent.kt"
+      "output": "src/main/java/com/flechazo/polaris_vehicle/sparkcore/event/NeedsCollisionEvent.java"
     },
     {
       "source": "com/jme3/bounding/BoundingBox.java",
@@ -1087,5 +1082,6 @@
       "sha256": "ab9e0e1b7e236432ba1130a7701c834bf80c2fc39f203d4595e0380797d23bc5",
       "output": "src/main/java/com/jme3/bullet/collision/PhysicsCollisionObject.java"
     }
-  ]
+  ],
+  "implementation_language": "Java"
 }

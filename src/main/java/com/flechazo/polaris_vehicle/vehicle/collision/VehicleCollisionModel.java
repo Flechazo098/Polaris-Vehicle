@@ -5,6 +5,8 @@ import com.flechazo.polaris_vehicle.vehicle.collision.data.BedrockStructureBone;
 import com.flechazo.polaris_vehicle.vehicle.collision.data.BedrockStructureCube;
 import com.flechazo.polaris_vehicle.vehicle.collision.data.BedrockStructureDocument;
 import com.flechazo.polaris_vehicle.vehicle.collision.data.BedrockStructureGeometry;
+import com.flechazo.polaris_vehicle.vehicle.collision.data.BedrockBonePose;
+import java.util.function.Function;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Matrix4f;
@@ -57,6 +59,16 @@ public final class VehicleCollisionModel {
     }
 
     public static VehicleCollisionModel compile(BedrockStructureDocument document) {
+        return compile(document, new Matrix4f().rotateY((float) Math.PI));
+    }
+
+    /** Shared Bedrock compiler; block renderers supply their own origin/facing instead of entity rotation. */
+    public static VehicleCollisionModel compile(BedrockStructureDocument document, Matrix4f modelTransform) {
+        return compile(document, modelTransform, name -> BedrockBonePose.IDENTITY);
+    }
+
+    public static VehicleCollisionModel compile(BedrockStructureDocument document, Matrix4f modelTransform,
+                                                Function<String, BedrockBonePose> pose) {
         BedrockStructureGeometry geometry = document.primaryGeometry();
         Map<String, BedrockStructureBone> bonesByName = new LinkedHashMap<>();
         Map<String, List<BedrockStructureBone>> childrenByParent = new HashMap<>();
@@ -97,7 +109,7 @@ public final class VehicleCollisionModel {
         // GeoEntityRenderer rotates plain Entity models by 180 degrees before
         // our renderer applies -entityYaw. Including that bind transform here
         // keeps server collision coordinates aligned with visible geometry.
-        Matrix4f entityModelTransform = new Matrix4f().rotateY((float) Math.PI);
+        Matrix4f entityModelTransform = new Matrix4f(modelTransform);
         for (BedrockStructureBone root : roots) {
             compileBone(
                     root,
@@ -107,7 +119,8 @@ public final class VehicleCollisionModel {
                     visiting,
                     visited,
                     compiledCubes,
-                    compiledLocators
+                    compiledLocators,
+                    pose
             );
         }
         if (visited.size() != geometry.bones().size()) {
@@ -359,15 +372,19 @@ public final class VehicleCollisionModel {
             Set<String> visiting,
             Set<String> visited,
             List<VehicleCollisionCube> output,
-            Map<String, Vec3> locatorOutput
+            Map<String, Vec3> locatorOutput,
+            Function<String, BedrockBonePose> pose
     ) {
         if (!visiting.add(bone.name())) {
             throw new IllegalArgumentException("Cycle at Bedrock bone '" + bone.name() + "'");
         }
+        BedrockBonePose animation = pose.apply(bone.name());
+        Vec3 translation = animation.translation();
         Matrix4f boneTransform = applyBedrockPivotRotation(
-                new Matrix4f(parentTransform),
+                new Matrix4f(parentTransform).translate((float) (-translation.x / PIXELS_PER_BLOCK),
+                        (float) (translation.y / PIXELS_PER_BLOCK), (float) (translation.z / PIXELS_PER_BLOCK)),
                 bone.pivot(),
-                bone.rotation()
+                bone.rotation().add(animation.rotation())
         );
         VehicleCollisionRole role = VehicleCollisionRoles.classify(bone.name(), parentRole);
         bone.locators().forEach((name, rawPosition) -> {
@@ -431,7 +448,8 @@ public final class VehicleCollisionModel {
                     visiting,
                     visited,
                     output,
-                    locatorOutput
+                    locatorOutput,
+                    pose
             );
         }
         visiting.remove(bone.name());

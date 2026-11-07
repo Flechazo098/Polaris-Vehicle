@@ -3,11 +3,13 @@ plugins {
 }
 
 ext.mod_id = 'polaris_vehicle_more_liveries'
+ext.mod_version = rootProject.property('more_liveries_version')
 ext.mod_name = 'Polaris Vehicle More Liveries'
 ext.mod_archive_name = mod_name
 ext.mod_description = 'Additional vehicle liveries for Polaris Vehicle.'
 apply plugin: 'polaris.mod-conventions'
 apply plugin: 'polaris.client-runtime'
+apply plugin: 'polaris.lint'
 
 dependencies {
     implementation project(':')

@@ -5,6 +5,7 @@ import com.flechazo.hkt.Either;
 import com.flechazo.hkt.Maybe;
 import com.flechazo.hkt.business.core.Pathway;
 import com.flechazo.polaris_vehicle.PolarisVehicle;
+import com.flechazo.polaris_vehicle.item.VehiclePaintItem;
 import com.flechazo.polaris_vehicle.part.*;
 import com.flechazo.polaris_vehicle.power.VehiclePowerDefinition;
 import com.flechazo.polaris_vehicle.power.VehiclePowerDefinitions;
@@ -137,7 +138,8 @@ public record VehicleInstanceData(
             ResourceLocation newPaintId
     ) {
         return Pathway.either(Pathway.nullable(newPaintId).toEither(() -> "Paint id must not be null"))
-                .via(paint -> VehiclePaintDefinitions.supports(definition.id(), paint)
+                .via(paint -> (DEFAULT_PAINT.equals(paint) || VehiclePaintItem.find(paint)
+                        .filter(item -> item.supports(definition.id())).isDefined())
                         ? Pathway.<String, ResourceLocation>right(paint)
                         : Pathway.<String, ResourceLocation>left("Vehicle " + definition.id() + " does not support paint " + paint))
                 .map(paint -> new VehicleInstanceData(

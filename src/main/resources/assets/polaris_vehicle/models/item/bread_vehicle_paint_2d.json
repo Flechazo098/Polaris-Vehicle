@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "polaris_vehicle:item/bread_vehicle_paint"
+    "layer0": "polaris_vehicle:item/bread_vehicle_paint_2d"
   },
   "gui_light": "front"
 }

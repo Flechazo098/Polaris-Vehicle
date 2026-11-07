@@ -45,12 +45,9 @@ public final class VehicleTireModel<T extends AbstractVehicleEntity> extends Iso
         if (appearance != null) {
             return appearance.texture();
         }
-        return PolarisVehicle.id("textures/entity/vehicle/"
-                + VehicleAssets.textureName(
-                vehicle.vehicleTypeId(),
-                vehicle.vehicleData().paintId()
-        )
-                + ".png");
+        return VehicleAssets.paintTexture(vehicle.vehicleTypeId(),
+                PolarisVehicle.MODID.equals(vehicle.vehicleData().paintId().getNamespace())
+                        ? vehicle.vehicleData().paintId() : null);
     }
 
     @Override

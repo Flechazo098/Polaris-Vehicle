@@ -69,6 +69,7 @@ public final class ModCreativeModeTabs {
                         output.accept(ModItems.HAMMER.get());
                         output.accept(ModItems.PORTABLE_JACK.get());
                         output.accept(ModItems.VEHICLE_KEY.get());
+                        output.accept(ModItems.DRIVING_LICENSE.get());
                     })
                     .build()
     );

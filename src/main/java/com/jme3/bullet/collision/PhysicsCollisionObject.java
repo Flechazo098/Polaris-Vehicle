@@ -33,6 +33,7 @@ package com.jme3.bullet.collision;
 
 import com.flechazo.polaris_vehicle.sparkcore.physics.body.CollisionGroups;
 import com.flechazo.polaris_vehicle.sparkcore.physics.body.PhysicsBodyEvent;
+import com.flechazo.polaris_vehicle.sparkcore.physics.body.PhysicsBodyState;
 import com.flechazo.polaris_vehicle.sparkcore.util.InlineEventConsumer;
 import com.flechazo.polaris_vehicle.sparkcore.util.InlineEventHandler;
 import com.jme3.bounding.BoundingBox;
@@ -49,7 +50,6 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jme3utilities.Validate;
-import kotlin.reflect.KClass;
 
 /**
  * The abstract base class for collision objects based on Bullet's
@@ -71,10 +71,21 @@ abstract public class PhysicsCollisionObject extends NativePhysicsObject impleme
 
     public int collideWithOwnerGroups = CollisionGroups.NONE;
 
-    private final Map<KClass<? extends PhysicsBodyEvent>, List<InlineEventConsumer<? extends PhysicsBodyEvent>>> eventHandlers = new HashMap<>();
+    private volatile PhysicsBodyState physicsState;
+
+    public PhysicsBodyState getPhysicsState() {
+        var state = physicsState;
+        if (state == null) synchronized (this) {
+            state = physicsState;
+            if (state == null) physicsState = state = new PhysicsBodyState(this);
+        }
+        return state;
+    }
+
+    private final Map<Class<? extends PhysicsBodyEvent>, List<InlineEventConsumer<? extends PhysicsBodyEvent>>> eventHandlers = new HashMap<>();
 
     @Override
-    public Map<KClass<? extends PhysicsBodyEvent>, List<InlineEventConsumer<? extends PhysicsBodyEvent>>> getEventHandlers() {
+    public Map<Class<? extends PhysicsBodyEvent>, List<InlineEventConsumer<? extends PhysicsBodyEvent>>> getEventHandlers() {
         return eventHandlers;
     }
 

@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 曦月 (SolarMoon) and SparkCore contributors.
 // Extracted from SparkCore 1.0.1031: mixin/extension/LevelMixin.java
-// Polaris changes are reproducible in tools/extract_sparkcore_physics.py.
 package com.flechazo.polaris_vehicle.mixin.sparkcore;
 
 import com.flechazo.polaris_vehicle.sparkcore.LevelPatch;
@@ -11,10 +10,9 @@ import com.flechazo.polaris_vehicle.sparkcore.util.DelayedTask;
 import com.flechazo.polaris_vehicle.sparkcore.util.PPhase;
 import com.flechazo.polaris_vehicle.sparkcore.util.TaskSubmitOffice;
 import com.jme3.bullet.collision.PhysicsCollisionObject;
-import kotlin.Unit;
-import kotlin.jvm.functions.Function0;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 
 import java.util.HashMap;
@@ -26,22 +24,22 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 public abstract class LevelMixin implements LevelPatch, ILevelMixin {
 
     private final Level level = (Level) (Object) this;
-    private PhysicsLevel physicsLevel;
+    private volatile PhysicsLevel physicsLevel;
     private final HashMap<String, PhysicsCollisionObject> collisionObjects = new HashMap<>();
-    private final ConcurrentHashMap<PPhase, ConcurrentHashMap<String, Function0<Unit>>> tasks = new ConcurrentHashMap<>();
-    private final ConcurrentHashMap<PPhase, ConcurrentLinkedDeque<Function0<Unit>>> imtasks = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<PPhase, ConcurrentHashMap<String, Runnable>> tasks = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<PPhase, ConcurrentLinkedDeque<Runnable>> imtasks = new ConcurrentHashMap<>();
     /** 去重延迟任务映射 */
     private final ConcurrentHashMap<PPhase, ConcurrentHashMap<String, DelayedTask>> delayedTasks = new ConcurrentHashMap<>();
     /** 非去重延迟任务队列 */
     private final ConcurrentHashMap<PPhase, ConcurrentLinkedDeque<DelayedTask>> delayedTaskQueue = new ConcurrentHashMap<>();
 
     @Override
-    public ConcurrentHashMap<PPhase, ConcurrentHashMap<String, Function0<Unit>>> getTaskMap() {
+    public ConcurrentHashMap<PPhase, ConcurrentHashMap<String, Runnable>> getTaskMap() {
         return tasks;
     }
 
     @Override
-    public ConcurrentHashMap<PPhase, ConcurrentLinkedDeque<Function0<Unit>>> getImmediateQueue() {
+    public ConcurrentHashMap<PPhase, ConcurrentLinkedDeque<Runnable>> getImmediateQueue() {
         return imtasks;
     }
 
@@ -53,6 +51,11 @@ public abstract class LevelMixin implements LevelPatch, ILevelMixin {
     @Override
     public ConcurrentHashMap<PPhase, ConcurrentLinkedDeque<DelayedTask>> getDelayedTaskQueue() {
         return delayedTaskQueue;
+    }
+
+    @Override
+    public @Nullable PhysicsLevel getPhysicsLevelIfPresent() {
+        return physicsLevel;
     }
 
     @Override

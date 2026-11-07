@@ -22,7 +22,7 @@ public record VehicleClientConfig(
         double vehicleLodDistanceScale,
         boolean parameterEditorEnabled
 ) {
-    public static final double DEFAULT_VISIBLE_LOCK_SECONDS = 0.10;
+    public static final double DEFAULT_VISIBLE_LOCK_SECONDS = 0.05;
     public static final Codec<VehicleClientConfig> CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.doubleRange(50.0, 140.0)

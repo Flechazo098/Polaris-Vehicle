@@ -7,6 +7,10 @@ public final class VehiclePhysicsStepGate {
     private boolean pending;
     private boolean closed;
 
+    public boolean isHeldByCurrentThread() {
+        return lock.isHeldByCurrentThread();
+    }
+
     public boolean tryPrepare() {
         if (!lock.tryLock()) return false;
         if (pending || closed) {

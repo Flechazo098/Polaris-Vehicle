@@ -3,6 +3,7 @@ package com.flechazo.polaris_vehicle;
 import cc.sighs.oelib.network.api.NetworkAutoRegistration;
 import com.flechazo.polaris_vehicle.config.VehicleClientConfig;
 import com.flechazo.polaris_vehicle.config.VehicleGameplayConfig;
+import com.flechazo.polaris_vehicle.config.VehicleLicenseConfig;
 import com.flechazo.polaris_vehicle.model.PolyMeshBakedModelFactory;
 import com.flechazo.polaris_vehicle.part.VehicleRepairRecipeManager;
 import com.flechazo.polaris_vehicle.registry.*;
@@ -46,6 +47,7 @@ public class PolarisVehicle {
         ModCreativeModeTabs.register(modEventBus);
         ModEntityTypes.register(modEventBus);
         VehicleGameplayConfig.register();
+        VehicleLicenseConfig.register();
         VehicleClientConfig.register();
         VehicleStructureModelManager.registerServerListener();
         VehicleRepairRecipeManager.registerServerListener();

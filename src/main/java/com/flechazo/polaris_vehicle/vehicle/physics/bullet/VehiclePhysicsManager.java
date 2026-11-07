@@ -16,7 +16,6 @@ import com.flechazo.polaris_vehicle.vehicle.data.VehicleTypeParameters;
 import com.flechazo.polaris_vehicle.vehicle.entity.AbstractVehicleEntity;
 import com.jme3.bullet.PhysicsSpace;
 import com.jme3.bullet.collision.shapes.HullCollisionShape;
-import kotlin.Unit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.ChunkPos;
@@ -49,10 +48,7 @@ public final class VehiclePhysicsManager {
      * Level's task office runs on the server thread; only PhysicsLevel owns native mutations.
      */
     private static void submitPhysicsPre(PhysicsLevel physicsLevel, Runnable task) {
-        physicsLevel.submitImmediateTask(PPhase.PRE, () -> {
-            task.run();
-            return Unit.INSTANCE;
-        });
+        physicsLevel.submitImmediateTask(PPhase.PRE, task);
     }
 
     public static synchronized void register() {
@@ -69,7 +65,7 @@ public final class VehiclePhysicsManager {
     }
 
     private static void onPhysicsLevelInit(PhysicsLevelInitEvent event) {
-        PhysicsLevel physicsLevel = event.getLevel();
+        PhysicsLevel physicsLevel = event.getPhysicsLevel();
         registerRampShapes(physicsLevel);
     }
 
@@ -93,7 +89,7 @@ public final class VehiclePhysicsManager {
             AbstractVehicleEntity vehicle,
             VehiclePhysicsInput input
     ) {
-        if (vehicle.level().isClientSide() || !SparkLevel.isSparkLevel(vehicle.level())) {
+        if (vehicle.level().isClientSide() || SparkLevel.getPhysicsLevelIfPresent(vehicle.level()) == null) {
             return false;
         }
         return VehicleStructureModelManager.SERVER.find(vehicle.vehicleTypeId()).fold(
@@ -169,7 +165,7 @@ public final class VehiclePhysicsManager {
      * packets carry it, instead of waiting one more tick in the entity update.
      */
     private static void onLevelTickPre(LevelTickEvent.Pre event) {
-        if (event.getLevel().isClientSide() || !SparkLevel.isSparkLevel(event.getLevel())) {
+        if (event.getLevel().isClientSide() || SparkLevel.getPhysicsLevelIfPresent(event.getLevel()) == null) {
             return;
         }
         ConcurrentHashMap<UUID, Handle> levelControllers =
@@ -260,7 +256,7 @@ public final class VehiclePhysicsManager {
     }
 
     public static void removeVehicle(AbstractVehicleEntity vehicle) {
-        if (vehicle.level().isClientSide() || !SparkLevel.isSparkLevel(vehicle.level())) {
+        if (vehicle.level().isClientSide() || SparkLevel.getPhysicsLevelIfPresent(vehicle.level()) == null) {
             return;
         }
         PhysicsLevel physicsLevel = SparkLevel.getPhysicsLevel(vehicle.level());
@@ -290,7 +286,7 @@ public final class VehiclePhysicsManager {
     }
 
     public static boolean isSleeping(AbstractVehicleEntity vehicle) {
-        if (vehicle.level().isClientSide() || !SparkLevel.isSparkLevel(vehicle.level())) return false;
+        if (vehicle.level().isClientSide() || SparkLevel.getPhysicsLevelIfPresent(vehicle.level()) == null) return false;
         var handles = CONTROLLERS.get(SparkLevel.getPhysicsLevel(vehicle.level()));
         var handle = handles == null ? null : handles.get(vehicle.getUUID());
         return handle != null && handle.controller().sleeping();
@@ -315,16 +311,16 @@ public final class VehiclePhysicsManager {
     }
 
     private static void onPhysicsPre(PhysicsLevelTickEvent.Pre event) {
-        ConcurrentHashMap<UUID, Handle> levelControllers = CONTROLLERS.get(event.getLevel());
+        ConcurrentHashMap<UUID, Handle> levelControllers = CONTROLLERS.get(event.getPhysicsLevel());
         if (levelControllers == null) {
             return;
         }
-        double timeStep = event.getLevel().getCurrentStepSeconds();
+        double timeStep = event.getPhysicsLevel().getCurrentStepSeconds();
         levelControllers.forEach((id, handle) -> {
             try {
-                handle.controller().prePhysicsStep(event.getLevel().getWorld(), timeStep);
+                handle.controller().prePhysicsStep(event.getPhysicsLevel().getWorld(), timeStep);
             } catch (RuntimeException exception) {
-                removeFailedController(event.getLevel(), levelControllers, id, handle, exception);
+                removeFailedController(event.getPhysicsLevel(), levelControllers, id, handle, exception);
             }
         });
     }
@@ -333,8 +329,8 @@ public final class VehiclePhysicsManager {
         // A main-thread tick consumes exactly one completed 50ms batch.
         // Publishing intermediate solver steps lets thread scheduling turn a
         // steady drive into alternating short and long network movements.
-        boolean publishSnapshot = event.getLevel().getLastSubstepOfTick();
-        ConcurrentHashMap<UUID, Handle> levelControllers = CONTROLLERS.get(event.getLevel());
+        boolean publishSnapshot = event.getPhysicsLevel().getLastSubstepOfTick();
+        ConcurrentHashMap<UUID, Handle> levelControllers = CONTROLLERS.get(event.getPhysicsLevel());
         if (levelControllers == null) {
             return;
         }
@@ -342,7 +338,7 @@ public final class VehiclePhysicsManager {
             try {
                 handle.controller().postPhysicsStep(publishSnapshot);
             } catch (RuntimeException exception) {
-                removeFailedController(event.getLevel(), levelControllers, id, handle, exception);
+                removeFailedController(event.getPhysicsLevel(), levelControllers, id, handle, exception);
             }
         });
     }

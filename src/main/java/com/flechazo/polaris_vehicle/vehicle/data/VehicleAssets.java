@@ -1,6 +1,7 @@
 package com.flechazo.polaris_vehicle.vehicle.data;
 
 import com.flechazo.hkt.Maybe;
+import com.flechazo.polaris_vehicle.item.VehiclePaintItem;
 import com.flechazo.polaris_vehicle.PolarisVehicle;
 import com.flechazo.polaris_vehicle.part.VehiclePartSlot;
 import net.minecraft.resources.ResourceLocation;
@@ -199,24 +200,21 @@ public final class VehicleAssets {
                 : modelName(vehicleType);
     }
 
-    public static String textureName(ResourceLocation vehicleType, ResourceLocation paintId) {
-        String baseName = textureName(vehicleType);
-        return VehiclePaintDefinitions.find(paintId)
-                .fold(() -> baseName, paint -> baseName + paint.textureSuffix());
-    }
-
     public static ResourceLocation paintTexture(ResourceLocation vehicleType, ResourceLocation paintId) {
-        return VehiclePaintSkins.assets(vehicleType, paintId).flatMap(assets -> Maybe.ofNullable(assets.texture()))
-                .orElseGet(() -> PolarisVehicle.id("textures/entity/vehicle/" + textureName(vehicleType, paintId) + ".png"));
+        return VehiclePaintItem.find(paintId).filter(paint -> paint.supports(vehicleType))
+                .map(paint -> paint.texture(vehicleType))
+                .orElseGet(() -> PolarisVehicle.id("textures/entity/vehicle/" + textureName(vehicleType) + ".png"));
     }
 
     public static ResourceLocation paintChassis(ResourceLocation vehicleType, ResourceLocation paintId) {
-        return VehiclePaintSkins.assets(vehicleType, paintId).flatMap(assets -> Maybe.ofNullable(assets.chassis()))
+        return VehiclePaintItem.find(paintId).filter(paint -> paint.supports(vehicleType))
+                .flatMap(paint -> paint.model(vehicleType, "chassis"))
                 .orElseGet(() -> PolarisVehicle.id("geo/vehicle/" + chassisModelName(vehicleType) + ".geo.json"));
     }
 
     public static ResourceLocation paintControl(ResourceLocation vehicleType, ResourceLocation paintId) {
-        return VehiclePaintSkins.assets(vehicleType, paintId).flatMap(assets -> Maybe.ofNullable(assets.control()))
+        return VehiclePaintItem.find(paintId).filter(paint -> paint.supports(vehicleType))
+                .flatMap(paint -> paint.model(vehicleType, "control"))
                 .orElseGet(() -> PolarisVehicle.id("geo/vehicle/" + controlModelName(vehicleType) + ".geo.json"));
     }
 
